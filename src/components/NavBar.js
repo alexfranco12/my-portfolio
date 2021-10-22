@@ -5,13 +5,17 @@ import { RiMenu4Fill } from 'react-icons/ri'
 import { Link } from "gatsby";
 
 export const NavBar = () => {
-  const [width, setWidth] = useState(window.innerWidth);
+  const isBrowser = typeof window !== 'undefined'
+  const [width, setWidth] = useState(isBrowser ? window.innerWidth : 0)
 
   useEffect(() => {
-    const handleWindowResize = () => setWidth(window.innerWidth);
-    window.addEventListener("resize", handleWindowResize);
-    return () => window.removeEventListener("resize", handleWindowResize);
-  }, []);
+    if (!isBrowser) return false
+    const handleResize = () => setWidth(window.innerWidth)
+    window.addEventListener('resize', handleResize)
+    return () => {
+      window.removeEventListener('resize', handleResize)
+    }
+  });
 
   return ( 
     <NavBarStyled>
