@@ -1,7 +1,38 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "my portfolio",
+    title: "My Portfolio",
+    description: "This is a portfolio built with Gatsby",
+    url: "",
+    image: "",
+    author: "Alexander Franco",
   },
-  plugins: [],
+  plugins: [
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `roboto mono`,
+          `odor mean chey`,
+          `work sans\:400,400i,700,700i`
+        ],
+        display: 'swap'
+      }
+    },
+    `gatsby-plugin-sharp`, 
+    `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/pages`
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`
+      },
+    },
+  ],
 };
