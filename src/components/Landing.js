@@ -13,8 +13,8 @@ export const Landing = () => {
 }
 
 const LandingStyled = styled.div`
-  grid-column: 2 / span 12;
   height: 85vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,7 +26,7 @@ const LandingStyled = styled.div`
       text-transform: uppercase;
     }
     & .blink {
-      background-color: black;
+      background-color: #000;
       height: 9.5rem;
       width: 4rem;
       transform: translate(0, -15%);
@@ -35,7 +35,6 @@ const LandingStyled = styled.div`
   }
 
   @media ${props => props.theme.breakpoints.tablet} {
-    grid-column: 2 / span 6;
     .title {
       & h1 {
         font-size: 6rem;

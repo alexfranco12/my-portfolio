@@ -35,7 +35,7 @@ const NavBarStyled = styled.div`
   justify-content: space-between;
   & a {
     text-decoration: none;
-    color: black;
+    color: ${props => props.theme.colors.dark1};
     & h1 {
       margin-left: 1rem;
     }

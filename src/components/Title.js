@@ -17,7 +17,7 @@ export const Title = ({ title, span }) => {
 const TitleStyled = styled.div`
   position: relative;
   h1 {
-    color: purple;
+    color: ${props => props.theme.colors.main1};
     font-size: 3.1rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -48,7 +48,7 @@ const TitleStyled = styled.div`
     span {
       font-size: 4rem;
       font-weight: 400;
-      color: gray;
+      color: ${props => props.theme.colors.dark2};
       opacity: .16;
       position: absolute;
       left: 1%;

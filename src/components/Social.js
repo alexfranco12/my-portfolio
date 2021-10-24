@@ -17,7 +17,7 @@ const SocialStyled = styled.div`
   & a {
     & svg {
       font-size: 2.5rem;
-      color: purple;
+      color: ${props => props.theme.colors.main1};
       &:hover, 
       &:focus {
         filter: brightness(50%)

@@ -28,7 +28,7 @@ const SmallTitleStyled = styled.div`
     }
   }
   h2 {
-    color: black;
+    color: ${props => props.theme.colors.dark1};
     font-size: 1.75rem;
   }
 `;

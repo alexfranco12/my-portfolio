@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Button, NeonButton, Skill } from ".";
+import { Button, Skill } from ".";
 import { 
   FaHtml5, 
   FaCss3, 
@@ -56,11 +56,11 @@ export const About = () => {
 }
 
 const AboutStyled = styled.div`
-  grid-column: 2 / span 12;
-  scroll-snap-align: start;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 5rem;
+  padding-top: 5rem;
+  margin-bottom: 15rem;
   & .s-1 {
     margin-bottom: 3rem;
     & .s-1-header {
@@ -70,10 +70,14 @@ const AboutStyled = styled.div`
       margin-bottom: 2rem;
       padding-right: 1.5rem;
       & h1 {
+        font-size: 2rem;
         & span {
-          color: purple;
+          color: ${props => props.theme.colors.main1};
         }
       }
+    }
+    & h2 {
+      font-size: 1rem;
     }
   }
   & .s-2 {
@@ -85,6 +89,21 @@ const AboutStyled = styled.div`
   }
 
   @media ${props => props.theme.breakpoints.tablet} {
-    grid-column: 2 / span 6;
+    padding: 1rem;
+    & .s-1 {
+      margin-bottom: 1.5rem;
+      & .s-1-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    & .s-2 {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around;
+    }
   }
 `;

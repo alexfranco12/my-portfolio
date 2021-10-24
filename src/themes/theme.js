@@ -5,8 +5,11 @@ const Theme = {
     code: "Roboto Mono, monospace",
   },
   colors: {
-    main1: "hsl(207, 70%, 59%)",
-    main2: "hsl(207, 70%, 94%)",
+    main1: "#5D04D9",
+    main2: "#5204BF",
+    main3: "#260259",
+    accent1: "#205949",
+    accent2: "#638C0B",
     dark1: "hsl(227, 2%, 12%)",
     dark2: "hsl(227, 2%, 26%)",
     dark3: "hsl(227, 2%, 64%)",

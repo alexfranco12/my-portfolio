@@ -1,6 +1,5 @@
 import * as React from 'react'
-import styled from 'styled-components';
-import { MainLayout } from '../Layouts';
+import { MainLayout, InnerLayout } from '../Layouts';
 import { NavBar, SmallTitle, Title } from '../components';
 import { 
   RiBookOpenLine,
@@ -81,13 +80,3 @@ const ResumePage = () => {
 }
  
 export default ResumePage;
-
-const InnerLayout = styled.div`
-  grid-column: 2 / span 12;
-  grid-row: 2;
-  padding: 1rem;
-
-  @media ${props => props.theme.breakpoints.tablet} {
-    grid-column: 2 / span 6;
-  }
-`;
