@@ -30,8 +30,8 @@ const ProjectItemStyled = styled.div`
     color: ${props => props.theme.colors.light1};
     background-size: cover;
     background-color: ${props => props.theme.colors.dark2};
-    padding: 6rem 0 0;
-    max-width: 42ch;
+    padding: 4rem 0 0;
+    max-width: 36ch;
     overflow: hidden;
     border-radius: 0.5rem;
     & .card-content {
@@ -115,6 +115,19 @@ const ProjectItemStyled = styled.div`
       & *:not(.card-title) {
         opacity: 1;
         transition-delay: 600ms;
+      }
+    }
+  }
+
+  @media ${props => props.theme.breakpoints.tablet} {
+    line-height: 1.2rem;
+    & .card {
+      padding: 6rem 0 0;
+      max-width: 28ch;
+      & .card-content {
+        & .card-title::after {
+          bottom: -10px;
+        }
       }
     }
   }

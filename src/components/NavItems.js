@@ -6,7 +6,7 @@ export const NavItems = () => {
   return (
     <NavItemsStyled>
       <p>about.</p>
-      <p>projects.</p>
+      <Link to="/#projects">projects.</Link>
       <Link to="resume">resume.</Link>
       <p>contact.</p>
     </NavItemsStyled>

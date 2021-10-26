@@ -1,22 +1,19 @@
 import * as React from 'react'
 import { MainLayout, InnerLayout } from '../Layouts';
-import { NavBar, SmallTitle, Title } from '../components';
+import { RestaurantExperience, SmallTitle, Title } from '../components';
 import { 
-  RiBookOpenLine,
   RiCodeSSlashFill,
-  RiFolder5Line,
+  RiRestaurantLine,
   RiBriefcase2Fill,
   RiCompasses2Fill,
+  RiLightbulbFlashLine,
 } from 'react-icons/ri'
 
 const ResumePage = () => {
   return ( 
     <MainLayout>
-      <NavBar />
       <InnerLayout>
         <Title title={"resume"} span={"resume"} />
-        <SmallTitle icon={RiBookOpenLine} title={"summary"} />
-        <p>Passionate full-stack developer with a broad set of technical and personal skills applicable across various industries and roles; graduated with a BA in Mathematics Education and General Assembly’s SEI Immersive. Reliable, results-driven, user-focused philosophy, proactive problem solver, and cooperative team player.</p>
         <SmallTitle icon={RiCodeSSlashFill} title={"Skills"} />
         <div className="skills">
           <ul>
@@ -28,7 +25,11 @@ const ResumePage = () => {
             <li>Restaurant Software: Aloha, Aloha Enterprise, Crunchtime, UltiPro, Micros, Toast, ADP, Avero, Yelp, OpenTable, UberEats, Caviar, Tock, Postmates</li>
           </ul>
         </div>
-        <SmallTitle icon={RiFolder5Line} title={"Projects"} />
+        <SmallTitle icon={RiBriefcase2Fill} title={"Software Engineering Experience"} />
+        <h2>Hackathons</h2>
+        <h4>digital ocean</h4>
+        <h4>general assembly</h4>
+        <h4>mintbean</h4>
         <h2>Software Engineering Immersive</h2>
         <h4>General Assembly</h4>
         <ul>
@@ -42,31 +43,40 @@ const ResumePage = () => {
             </ul>
           </li>
         </ul>
-        <SmallTitle icon={RiBriefcase2Fill} title={"Work Experience"} />
-        <h2>Front of House Manager</h2>
-        <h4>BOKA – BOKA Restaurant Group</h4>
-        <ul>
-          <li>Contributed to a superior guest experience earning the restaurant a Michelin Star 3 years in a row, and other awards.</li>
-          <li>Administered detailed inventory and sales data through Excel using advanced formulas and pivot tables.</li>
-          <li>Oversaw staff management: communicated job expectations, conducted staff meetings and quarterly department reviews, dedicated time and resources to ongoing team training, and led the hiring and development of employees.</li>
-          <li>Managed the execution of contracted events and restaurant buyouts.</li>
-        </ul>
-        <h2>Front of House Manager</h2>
-        <h4>Bar Siena & BomboBar – DineAmic Group</h4>
-        <ul>
-          <li>Led multiple projects and new process improvements and implemented them in a timely fashion.</li>
-          <li>Maximized restaurant costs by minimizing waste, labor, and supplies.</li>
-          <li>Supervised front-of-house staff by ensuring service standards are met for all Bar, Host, Bus, Run, and Servers.</li>
-          <li>Identified, addressed, and documented employee performance according to company operational standards.</li>
-        </ul>
-        <h2>Front of House Manager</h2>
-        <h4>Bar Louie River North - Bar Louie</h4>
-        <ul>
-          <li>Adhered to a defined budget while being attentive to the restaurant’s profit and loss.</li>
-          <li>Managed the recruitment and development of employees, ongoing team training, and employee scheduling.</li>
-          <li>Communicated all repair and maintenance needs with the appropriate third parties.</li>
-          <li>Conducted weekly inventory and kept within a 1% variance between actual and theoretical inventory.</li>
-        </ul>
+        <SmallTitle icon={RiRestaurantLine} title={"Work Experience"} />
+        <RestaurantExperience 
+          title={'Front of House Manager'}
+          subTitle={'BOKA – BOKA Restaurant Group'}
+          year={''}
+          listItems={[
+            'Contributed to a superior guest experience earning the restaurant a Michelin Star 3 years in a row, and other awards.',
+            'Administered detailed inventory and sales data through Excel using advanced formulas and pivot tables.',
+            'Oversaw staff management: communicated job expectations, conducted staff meetings and quarterly department reviews, dedicated time and resources to ongoing team training, and led the hiring and development of employees.',
+            'Managed the execution of contracted events and restaurant buyouts.'
+          ]}
+        />
+        <RestaurantExperience
+          title={'Front of House Manager'}
+          subTitle={'Bar Siena & BomboBar – DineAmic Group'}
+          year={''}
+          listItems={[
+            'Led multiple projects and new process improvements and implemented them in a timely fashion.',
+            'Maximized restaurant costs by minimizing waste, labor, and supplies.',
+            'Supervised front-of-house staff by ensuring service standards are met for all Bar, Host, Bus, Run, and Servers.',
+            'Identified, addressed, and documented employee performance according to company operational standards.'
+          ]}
+        />
+        <RestaurantExperience
+          title={'Front of House Manager'}
+          subTitle={'Bar Louie River North - Bar Louie'}
+          year={''}
+          listItems={[
+            'Adhered to a defined budget while being attentive to the restaurant’s profit and loss.',
+            'Managed the recruitment and development of employees, ongoing team training, and employee scheduling.',
+            'Communicated all repair and maintenance needs with the appropriate third parties.',
+            'Conducted weekly inventory and kept within a 1% variance between actual and theoretical inventory.'
+          ]}
+        />
         <SmallTitle icon={RiCompasses2Fill} title={"Education"} />
         <h2>General Assembly</h2>
         <h4>Certificate, Software Engineering Immersive Remote (SEI)</h4>

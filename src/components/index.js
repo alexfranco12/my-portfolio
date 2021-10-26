@@ -12,4 +12,6 @@ export * from './SmallTitle'
 export * from './NeonButton'
 export * from './Button'
 export * from './FeatureImage'
+export * from './Footer'
+export * from './RestaurantExperience'
 

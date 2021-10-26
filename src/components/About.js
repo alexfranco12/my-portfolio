@@ -27,10 +27,10 @@ export const About = () => {
     <AboutStyled>
       <div className="s-1">
         <div className="s-1-header">
-          <h1>Hello! I'm <span>Alexander Franco</span></h1>
+          <h1>Hello! My name is <span>Alex</span>,</h1>
           <Button text={"Let's Connect!"} />
         </div>
-        <h2>I'm a passionate full-stack web developer with a broad set of technical and personal skills applicable across various industries and roles. I am a reliable, result-driven, and cooperative team player with a user-focused philosophy.</h2>
+        <h2>I am a passionate full-stack developer with a broad set of technical and personal skills applicable across various industries and roles; graduated with a BA in Mathematics Education and General Assembly’s SEI Immersive. Reliable, results-driven, user-focused philosophy, proactive problem solver, and cooperative team player.</h2>
       </div>
       <h1>SKILLS:</h1>
       <div className="s-2">

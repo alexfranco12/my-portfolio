@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { NavBar, Seo } from '../components'
+import { Footer, NavBar, Seo } from '../components'
 
 export const MainLayout = ({ children }) => {
   return ( 
@@ -8,6 +8,7 @@ export const MainLayout = ({ children }) => {
       <Seo />
       <NavBar />
       {children}
+      <Footer />
     </MainLayoutStyled>
   );
 }
