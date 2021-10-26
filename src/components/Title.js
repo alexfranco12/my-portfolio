@@ -35,16 +35,6 @@ const TitleStyled = styled.div`
       background-color: white;
       border-radius: 15px;
     }
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 6.4rem;
-      height: .29rem;
-      background-color: purple;
-      border-radius: 15px;
-    }
     span {
       font-size: 4rem;
       font-weight: 400;

@@ -1,18 +1,18 @@
 import * as React from 'react'
-import { MainLayout, InnerLayout } from '../Layouts';
+import styled from 'styled-components';
+import { MainLayout } from '../Layouts';
 import { RestaurantExperience, SmallTitle, Title } from '../components';
 import { 
   RiCodeSSlashFill,
   RiRestaurantLine,
   RiBriefcase2Fill,
   RiCompasses2Fill,
-  RiLightbulbFlashLine,
 } from 'react-icons/ri'
 
 const ResumePage = () => {
   return ( 
     <MainLayout>
-      <InnerLayout>
+      <ResumePageStyled>
         <Title title={"resume"} span={"resume"} />
         <SmallTitle icon={RiCodeSSlashFill} title={"Skills"} />
         <div className="skills">
@@ -82,11 +82,13 @@ const ResumePage = () => {
         <h4>Certificate, Software Engineering Immersive Remote (SEI)</h4>
         <h2>Illinois State University</h2>
         <h4>Bachelor of Science, Mathematics Secondary Education</h4>
-      </InnerLayout>
-      
-
+      </ResumePageStyled>
     </MainLayout>
    );
 }
  
 export default ResumePage;
+
+const ResumePageStyled = styled.div`
+  padding: 2rem;
+`;

@@ -10,8 +10,9 @@ export const InnerLayout = ({ children }) => {
 }
 
 const InnerLayoutStyled = styled.div`
+  background-color: ${props => props.theme.colors.light2};
   grid-column: 2 / span 12;
-  grid-row: 2;
+  grid-row-start: 2;
   display: flex;
   flex-direction: column;
 

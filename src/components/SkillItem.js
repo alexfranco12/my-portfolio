@@ -1,23 +1,26 @@
 import React from "react";
 import styled from "styled-components";
 
-export const Skill = ({ icon, text }) => {
+export const SkillItem = ({ icon, text }) => {
   const Icon = icon;
 
   return ( 
-    <SkillStyled>
+    <SkillItemStyled>
       <Icon />
       <p>{text}</p>
-    </SkillStyled>
+    </SkillItemStyled>
    );
 }
 
-const SkillStyled = styled.div`
+const SkillItemStyled = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 1.25rem .75rem;
+  & p {
+    font-family: ${props => props.theme.fonts.button};
+    text-transform: lowercase;
+  }
   & svg {
     font-size: 1.5rem;
     margin-bottom: .875rem;

@@ -4,7 +4,7 @@ export * from './NavItems';
 export * from './Landing';
 export * from './About';
 export * from './Social';
-export * from './Skill';
+export * from './SkillItem';
 export * from './Projects';
 export * from './ProjectItem'
 export * from './Title'

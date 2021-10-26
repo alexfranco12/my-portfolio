@@ -13,7 +13,7 @@ const ButtonStyled = styled.div`
   position: relative;
   font-family: ${props => props.theme.fonts.button};
   background-color: ${props => props.theme.colors.dark1};
-  color: ${props => props.theme.colors.light2};
+  color: ${props => props.theme.colors.light1};
   border-radius: 30px;
   transition: transform 0.3s ease;
   padding: .5rem 1.5rem;

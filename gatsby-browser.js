@@ -19,7 +19,6 @@ const GlobalStyles = createGlobalStyle`
   }
   body, html {
     font-family: ${props => props.theme.fonts.main};
-    background-color: ${props => props.theme.colors.light1};
     height: 100%;
     width: 100%;
   }

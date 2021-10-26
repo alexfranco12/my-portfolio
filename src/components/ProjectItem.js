@@ -27,7 +27,7 @@ const ProjectItemStyled = styled.div`
   margin-bottom: 2rem;
   line-height: 1.5;
   & .card {
-    color: ${props => props.theme.colors.light1};
+    color: ${props => props.theme.colors.light2};
     background-size: cover;
     background-color: ${props => props.theme.colors.dark2};
     padding: 4rem 0 0;
@@ -65,7 +65,7 @@ const ProjectItemStyled = styled.div`
         cursor: pointer;
         display: inline;
         text-decoration: none;
-        color: ${props => props.theme.colors.light1};
+        color: ${props => props.theme.colors.light2};
         background-color: ${props => props.theme.colors.accent1};
         padding: 0.25rem 1.25rem;
         border-radius: 0.25rem;

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { ProjectItem } from "./ProjectItem";
+import { ProjectItem, Title } from ".";
 import dog_days from '../images/Dog-Days.png'
 import ninja_game from '../images/ninja-game.png'
 import hanoi from '../images/hanoi.jpg'
@@ -11,7 +11,7 @@ import purlieu from '../images/purlieu.png'
 export const Projects = () => {
   return ( 
     <ProjectsStyled>
-      <h1 id="projects">PROJECTS</h1>
+      <Title id="projects" title={"projects"} span={"projects"} />
       <div className="projects">
         <ProjectItem
           title={'Dog Days'}
@@ -61,14 +61,12 @@ export const Projects = () => {
 }
 
 const ProjectsStyled = styled.div`
-  padding-top: 5rem;
-  & h1 {
-    text-align: center;
-  }
+  margin: 2rem auto;
+  padding: 3rem 2rem;
   & .projects {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin-top: 4rem;
   }
 `;

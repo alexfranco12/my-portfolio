@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
+import { RiArrowDownSLine } from 'react-icons/ri'
 
 export const Landing = () => {
   return ( 
@@ -8,19 +9,23 @@ export const Landing = () => {
         <h1>Portfolio</h1>
         <div className="blink" />
       </div>
+      <div className="scroll-down">
+        <p>scroll</p>
+        <RiArrowDownSLine/>
+      </div>
     </LandingStyled>
    );
 }
 
 const LandingStyled = styled.div`
-  height: 85vh;
-  width: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   & .title {
     display: flex;
+    transform: translateY(-45px);
     & h1 {
       font-size: 8rem;
       text-transform: uppercase;
@@ -32,6 +37,16 @@ const LandingStyled = styled.div`
       transform: translate(0, -15%);
       animation: blink 1.2s ease infinite;
     }
+  }
+  & .scroll-down {
+    position: fixed;
+    color: ${props => props.theme.colors.dark3};
+    bottom: 0;
+    transform: translateY(-20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   @media ${props => props.theme.breakpoints.tablet} {

@@ -15,7 +15,7 @@ export const NavBar = () => {
     return () => {
       window.removeEventListener('resize', handleResize)
     }
-  });
+  },[isBrowser]);
 
   return ( 
     <NavBarStyled>
