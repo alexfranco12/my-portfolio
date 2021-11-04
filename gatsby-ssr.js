@@ -1,5 +1,6 @@
 import * as React from "react"
-import { createGlobalStyle, ThemeProvider } from "styled-components";
+import { ThemeProvider } from "styled-components";
+import { GlobalStyles } from './src/styles'
 import Theme from './src/themes/theme';
 
 export const wrapRootElement = ({ element }) => {
@@ -9,17 +10,5 @@ export const wrapRootElement = ({ element }) => {
       {element}
     </ThemeProvider>
   )
-}
+};
 
-const GlobalStyles = createGlobalStyle`
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  body, html {
-    font-family: ${props => props.theme.fonts.main};
-    height: 100%;
-    width: 100%;
-  }
-`;

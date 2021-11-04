@@ -26,12 +26,13 @@ const LandingStyled = styled.div`
   & .title {
     display: flex;
     transform: translateY(-45px);
+    color: ${props => props.theme.colors.dark1};
     & h1 {
       font-size: 8rem;
       text-transform: uppercase;
     }
     & .blink {
-      background-color: #000;
+      background-color: ${props => props.theme.colors.dark1};
       height: 9.5rem;
       width: 4rem;
       transform: translate(0, -15%);

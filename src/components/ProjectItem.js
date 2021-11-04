@@ -14,9 +14,15 @@ export const ProjectItem = ({ title, date, image, excerpt, repo}) => {
           <p className="card-body">
             {excerpt}
           </p>
-          <a href={repo} className="button" target="_blank" rel="noopender noreferrer">
-            <VscGithub />
-          </a>
+          <div className="button">
+            <a 
+              href={repo} 
+              target="_blank" 
+              rel="noopender noreferrer"
+              > <VscGithub />
+            </a>
+          </div>
+          
         </div>
       </div>
     </ProjectItemStyled>
@@ -59,16 +65,21 @@ const ProjectItemStyled = styled.div`
         margin: 1rem auto;
       }
       & .button {
-        display: flex;
-        justify-content: center;
-        justify-items: center;
         cursor: pointer;
-        display: inline;
+        width: 25%;
         text-decoration: none;
-        color: ${props => props.theme.colors.light2};
         background-color: ${props => props.theme.colors.accent1};
         padding: 0.25rem 1.25rem;
         border-radius: 0.25rem;
+        & a {
+          display: flex;
+          justify-content: center;
+          justify-items: center;
+          margin: .175rem auto;
+          & svg {
+            color: ${props => props.theme.colors.light2};
+          }
+        }
         &:hover,
         &:focus {
           background-color: ${props => props.theme.colors.main3};

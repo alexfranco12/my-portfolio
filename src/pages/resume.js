@@ -8,12 +8,18 @@ import {
   RiBriefcase2Fill,
   RiCompasses2Fill,
 } from 'react-icons/ri'
+import resume from '../files/resume.pdf'
 
 const ResumePage = () => {
   return ( 
     <MainLayout>
       <ResumePageStyled>
         <Title title={"resume"} span={"resume"} />
+        <div className="resume-download">
+          <a href={resume} target="_blank" rel="noopender noreferrer" download>
+            download resume
+          </a>
+        </div>
         <SmallTitle icon={RiCodeSSlashFill} title={"Skills"} />
         <div className="skills">
           <ul>
@@ -91,4 +97,7 @@ export default ResumePage;
 
 const ResumePageStyled = styled.div`
   padding: 2rem;
+  & .resume {
+    
+  }
 `;
