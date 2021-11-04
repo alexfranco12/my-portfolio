@@ -63,6 +63,8 @@ const MainLayoutStyled = styled.div`
   }
 
   @media ${props => props.theme.breakpoints.mobile} {
-  
+    & .light-dark-mode {
+      grid-column: 3 / span 4;
+    }
   }
 `;

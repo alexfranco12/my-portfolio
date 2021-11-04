@@ -70,7 +70,7 @@ const AboutStyled = styled.div`
   display: flex;
   flex-direction: column;
   padding: 5rem 2rem;
-  margin-bottom: 15rem;
+  margin-bottom: 3rem;
   & .s-1 {
     margin-bottom: 3rem;
     & .s-1-header {
@@ -92,7 +92,7 @@ const AboutStyled = styled.div`
     }
   }
   & .s-2 {
-    margin-top: 1rem;
+    margin: 1rem 0;
     overflow: hidden;
     & .row-1, .row-2, .row-3 {
       display: flex;

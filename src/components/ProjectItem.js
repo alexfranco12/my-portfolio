@@ -37,7 +37,7 @@ const ProjectItemStyled = styled.div`
     background-size: cover;
     background-color: ${props => props.theme.colors.dark2};
     padding: 4rem 0 0;
-    max-width: 36ch;
+    max-width: 42ch;
     overflow: hidden;
     border-radius: 0.5rem;
     & .card-content {

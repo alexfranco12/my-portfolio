@@ -22,7 +22,21 @@ const SkillItemStyled = styled.div`
     text-transform: lowercase;
   }
   & svg {
-    font-size: 1.5rem;
-    margin-bottom: .875rem;
+    font-size: 2.25rem;
+    margin-bottom: .615rem;
+  }
+
+  @media ${props => props.theme.breakpoints.tablet} {
+
+  }
+
+  @media ${props => props.theme.breakpoints.mobile} {  
+    & p {
+      font-size: .75rem;
+    }
+    & svg {
+      font-size: 1.5rem;
+      margin-bottom: .615rem;
+    }
   }
 `;
