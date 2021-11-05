@@ -1,17 +1,16 @@
 import React from "react";
 import styled from "styled-components";
 
-export const Button = ({ text }) => {
+export const StackedButton = ({ text }) => {
   return ( 
-    <ButtonStyled>
+    <StackedButtonStyled>
       {text}
-    </ButtonStyled>
+    </StackedButtonStyled>
    );
 }
  
-const ButtonStyled = styled.div`
+const StackedButtonStyled = styled.div`
   position: relative;
-  font-family: ${props => props.theme.fonts.button};
   background-color: ${props => props.theme.colors.dark1};
   color: ${props => props.theme.colors.light1};
   border-radius: 30px;

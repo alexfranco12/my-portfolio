@@ -8,7 +8,7 @@ export const NavItems = () => {
       <Link to="/about">about.</Link>
       <Link to="/#projects">projects.</Link>
       <Link to="/resume">resume.</Link>
-      <p>contact.</p>
+      <Link to="/contact">contact.</Link>
     </NavItemsStyled>
    );
 }

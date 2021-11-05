@@ -7,7 +7,7 @@ const AboutPage = () => {
   return ( 
     <MainLayout>
       <AboutPageStyled>
-        <Title title={"about"} span={"about"} />
+        <Title title={"about"} />
       </AboutPageStyled>
     </MainLayout>
    );
@@ -15,4 +15,7 @@ const AboutPage = () => {
  
 export default AboutPage;
 
-const AboutPageStyled = styled.div``;
+const AboutPageStyled = styled.div`
+  height: 100vh;
+  padding: 2rem;
+`;

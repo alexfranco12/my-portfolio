@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from 'styled-components'
 
-export const Title = ({ title, span }) => {
+export const Title = ({ title }) => {
   return ( 
-    <TitleStyled>
+    <TitleStyled id={title}>
       <h1>
         {title}
         <span>
-          {span}
+          {title}
         </span>
       </h1>
     </TitleStyled>

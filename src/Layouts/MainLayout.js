@@ -15,7 +15,10 @@ export const MainLayout = ({ children }) => {
         <NavBar />
         <div 
           className="light-dark-mode"
+          role="button"
           onClick={() => setDarkMode(!darkMode)}
+          onKeyDown={() => setDarkMode(!darkMode)}
+          tabIndex="0"
         > 
         <div className="icon"><MdOutlineLightMode /></div> 
         </div>

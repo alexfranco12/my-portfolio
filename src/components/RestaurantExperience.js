@@ -7,8 +7,10 @@ export const RestaurantExperience = ({ title, subTitle, year, listItems }) => {
       <h2>{title}</h2>
       <h4>{subTitle}</h4>
       <ul>
-        {listItems.map(item => (
-          <li>{item}</li>
+        {listItems.map((item, index) => (
+          <li key={index}>
+            {item}
+          </li>
         ))}
       </ul>
     </RestaurantExperienceStyled>

@@ -5,7 +5,7 @@ export const SmallTitle = ({ title, icon }) => {
   const Icon = icon
 
   return ( 
-    <SmallTitleStyled>
+    <SmallTitleStyled id={title}>
       <p>
         <Icon />
       </p>

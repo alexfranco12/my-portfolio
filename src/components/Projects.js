@@ -11,8 +11,8 @@ import purlieu from '../images/purlieu.png'
 export const Projects = () => {
   return ( 
     <ProjectsStyled>
-      <Title title={"projects"} span={"projects"} />
-      <div className="projects" id="projects">
+      <Title title={"projects"} />
+      <div className="projects">
         <ProjectItem
           title={'Dog Days'}
           date={'September 21, 2021'}

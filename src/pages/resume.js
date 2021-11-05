@@ -1,7 +1,7 @@
 import * as React from 'react'
 import styled from 'styled-components';
 import { MainLayout } from '../Layouts';
-import { RestaurantExperience, SmallTitle, Title } from '../components';
+import { BoxShadowButton, RestaurantExperience, SmallTitle, Title } from '../components';
 import { 
   RiCodeSSlashFill,
   RiRestaurantLine,
@@ -14,12 +14,17 @@ const ResumePage = () => {
   return ( 
     <MainLayout>
       <ResumePageStyled>
-        <Title title={"resume"} span={"resume"} />
-        <div className="resume-download">
-          <a href={resume} target="_blank" rel="noopender noreferrer" download>
-            download resume
-          </a>
+        <div className="resume-header">
+          <div className="resume-title">
+            <Title title={"resume"} />
+          </div>
+          <div className="resume-download">
+            <a href={resume} target="_blank" rel="noopender noreferrer" download>
+              <BoxShadowButton text={"download"} />
+            </a>
+          </div>
         </div>
+        
         <SmallTitle icon={RiCodeSSlashFill} title={"Skills"} />
         <div className="skills">
           <ul>
@@ -31,6 +36,7 @@ const ResumePage = () => {
             <li>Restaurant Software: Aloha, Aloha Enterprise, Crunchtime, UltiPro, Micros, Toast, ADP, Avero, Yelp, OpenTable, UberEats, Caviar, Tock, Postmates</li>
           </ul>
         </div>
+
         <SmallTitle icon={RiBriefcase2Fill} title={"Software Engineering Experience"} />
         <h2>Hackathons</h2>
         <h4>digital ocean</h4>
@@ -49,6 +55,7 @@ const ResumePage = () => {
             </ul>
           </li>
         </ul>
+
         <SmallTitle icon={RiRestaurantLine} title={"Work Experience"} />
         <RestaurantExperience 
           title={'Front of House Manager'}
@@ -83,6 +90,7 @@ const ResumePage = () => {
             'Conducted weekly inventory and kept within a 1% variance between actual and theoretical inventory.'
           ]}
         />
+
         <SmallTitle icon={RiCompasses2Fill} title={"Education"} />
         <h2>General Assembly</h2>
         <h4>Certificate, Software Engineering Immersive Remote (SEI)</h4>
@@ -97,7 +105,15 @@ export default ResumePage;
 
 const ResumePageStyled = styled.div`
   padding: 2rem;
-  & .resume {
-    
+  & .resume-header {
+    display: flex;
+    & .resume-title {
+      flex: 1;
+    }
+    & .resume-download {
+      flex: 1;
+      align-self: center;
+      text-align: center;
+    }
   }
 `;

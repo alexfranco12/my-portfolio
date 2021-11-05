@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Button, SkillItem } from ".";
+import { StackedButton, SkillItem } from ".";
 import { 
   FaHtml5, 
   FaCss3, 
@@ -21,6 +21,7 @@ import {
   SiGithubactions,
   SiHeroku,
   SiFigma,
+  SiTypescript
 } from 'react-icons/si'
 
 export const About = () => {
@@ -29,29 +30,30 @@ export const About = () => {
       <div className="s-1">
         <div className="s-1-header">
           <h1>hello! my name is <span>alex</span>,</h1>
-          <Button text={"Let's Connect!"} />
+          <StackedButton text={"Let's Connect!"} />
         </div>
-        <p className="summary">I am a passionate full-stack developer with a broad set of technical and personal skills applicable across various industries and roles; graduated with a BA in Mathematics Education and General Assembly’s SEI Immersive. Reliable, results-driven, user-focused philosophy, proactive problem solver, and cooperative team player.</p>
+        <p className="summary">I am a full-stack developer with a broad set of technical and personal skills applicable across various industries and roles; graduated with a BA in Mathematics Education and General Assembly’s SEI Immersive. Reliable, results-driven, user-focused philosophy, proactive problem solver, and cooperative team player.</p>
       </div>
       <div className="s-2">
         <div className="row-1">
           <SkillItem icon={FaHtml5} text={"HTML5"} />
           <SkillItem icon={FaCss3} text={"CSS3"} />
           <SkillItem icon={SiJavascript} text={"JAVASCRIPT"} />
+          <SkillItem icon={SiTypescript} text={"TYPESCRIPT"} />
           <SkillItem icon={FaPython} text={"PYTHON"} />
           <SkillItem icon={FaNodeJs} text={"NODE"} />
-          <SkillItem icon={SiExpress} text={"EXPRESS"} />
+
         </div>
         <div className="row-2">
+          <SkillItem icon={SiExpress} text={"EXPRESS"} />
           <SkillItem icon={FaReact} text={"REACT"} />
           <SkillItem icon={SiGatsby} text={"GATSBY"} />
           <SkillItem icon={SiDjango} text={"DJANGO"} />
           <SkillItem icon={SiMongodb} text={"MONGODB"} />
           <SkillItem icon={SiPostgresql} text={"POSTGRESQL"} />
-          
         </div>
         <div className="row-3">
-          <SkillItem icon={SiFigma} text={"figma"} />
+          <SkillItem icon={SiFigma} text={"FIGMA"} />
           <SkillItem icon={SiMaterialui} text={"MATERIALUI"} />
           <SkillItem icon={SiBootstrap} text={"BOOTSTRAP"} />
           <SkillItem icon={SiGithubactions} text={"GITHUB"} />

@@ -1,7 +1,6 @@
 const Theme = {
   fonts: {
     main: "Work Sans, sans-serif",
-    button: "Odor Mean Chey, serif",
     code: "Roboto Mono, monospace",
   },
   breakpoints: {

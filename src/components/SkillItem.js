@@ -17,8 +17,8 @@ const SkillItemStyled = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-width: 100px;
   & p {
-    font-family: ${props => props.theme.fonts.button};
     text-transform: lowercase;
   }
   & svg {

@@ -11,7 +11,6 @@ export const NeonButton = ({ text }) => {
 
 const NeonButtonStyled = styled.button`
   position: relative;
-  font-family: ${props => props.theme.fonts.button};
   font-size: 1.25rem;
   background-color: inherit;
   display: inline-block;
