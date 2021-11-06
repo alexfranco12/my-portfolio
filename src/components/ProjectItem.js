@@ -1,13 +1,38 @@
 import React from "react";
 import styled from "styled-components";
+import { graphql, useStaticQuery } from "gatsby";
 import { VscGithub } from "react-icons/vsc"
 
+import BackgroundImage from 'gatsby-background-image'
+
 export const ProjectItem = ({ title, date, image, excerpt, repo}) => {
+  const data = useStaticQuery(graphql`
+    query getAllImages {
+      allImageSharp {
+        nodes {
+          fluid {
+            originalName
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+
+  const getImage = () => {
+    const asArray = Object.entries(data.allImageSharp.nodes)
+    const filtered = asArray.filter(node => node[1].fluid.originalName === image)
+    return (filtered[0][1].fluid)
+  }
+  
+
   return ( 
     <ProjectItemStyled>
-      <div 
+      <BackgroundImage
+        Tag="section"
         className="card"
-        style={{backgroundImage: `url(${image}`}}
+        fluid={getImage()}
+        backgroundColor={`#040e18`}
       >
         <div className="card-content">
           <h2 className="card-title">{title}</h2>
@@ -22,9 +47,8 @@ export const ProjectItem = ({ title, date, image, excerpt, repo}) => {
               > <VscGithub />
             </a>
           </div>
-          
         </div>
-      </div>
+      </BackgroundImage>
     </ProjectItemStyled>
    );
 }
@@ -35,6 +59,7 @@ const ProjectItemStyled = styled.div`
   & .card {
     color: ${props => props.theme.colors.light2};
     background-size: cover;
+    background-position: bottom center;
     background-color: ${props => props.theme.colors.dark2};
     padding: 4rem 0 0;
     max-width: 42ch;

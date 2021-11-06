@@ -1,12 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { ProjectItem, Title } from ".";
-import dog_days from '../images/Dog-Days.png'
-import ninja_game from '../images/ninja-game.png'
-import hanoi from '../images/hanoi.jpg'
-import mise from '../images/mise-en-place.png'
-import lettuce from '../images/lettuce-eat.jpg'
-import purlieu from '../images/purlieu.png'
 
 export const Projects = () => {
   return ( 
@@ -16,42 +10,42 @@ export const Projects = () => {
         <ProjectItem
           title={'Dog Days'}
           date={'September 21, 2021'}
-          image={dog_days}
+          image={"dog-days.png"}
           excerpt={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus cupiditate corporis laborum laboriosam deleniti id aliquam velit, esse quod cum."}
           repo={'https://github.com/alexfranco12/hackathon-group2-sep2021-frontend'}
         />
         <ProjectItem
           title={'Ninja Survival'}
           date={'June 14, 2021'}
-          image={ninja_game}
+          image={'ninja-game.png'}
           excerpt={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus cupiditate corporis laborum laboriosam deleniti id aliquam velit, esse quod cum."}
           repo={'https://github.com/alexfranco12/survival-ninja-game'}
         />
         <ProjectItem
           title={'Lettuce Eat'}
           date={'June 14, 2021'}
-          image={lettuce}
+          image={'lettuce-eat.jpg'}
           excerpt={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus cupiditate corporis laborum laboriosam deleniti id aliquam velit, esse quod cum."}
           repo={'https://github.com/alexfranco12/lettuce_eat_frontend'}
         />
         <ProjectItem
           title={'Purlieu'}
           date={'June 14, 2021'}
-          image={purlieu}
+          image={'purlieu.png'}
           excerpt={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus cupiditate corporis laborum laboriosam deleniti id aliquam velit, esse quod cum."}
           repo={'https://github.com/alexfranco12/Project3-Frontend'}
         />
         <ProjectItem
           title={'Mise En Place'}
           date={'June 14, 2021'}
-          image={mise}
+          image={'mise-en-place.png'}
           excerpt={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus cupiditate corporis laborum laboriosam deleniti id aliquam velit, esse quod cum."}
           repo={'https://github.com/alexfranco12/mise-en-place'}
         />
         <ProjectItem
           title={'Towers of Hanoi'}
           date={'June 14, 2021'}
-          image={hanoi}
+          image={'hanoi.jpg'}
           excerpt={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus cupiditate corporis laborum laboriosam deleniti id aliquam velit, esse quod cum."}
           repo={'https://github.com/alexfranco12/towers-of-hanoi'}
         />
