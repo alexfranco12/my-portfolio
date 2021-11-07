@@ -1,7 +1,7 @@
 import * as React from 'react'
 import styled from 'styled-components';
 import { MainLayout } from '../Layouts';
-import { BoxShadowButton, RestaurantExperience, SmallTitle, Title } from '../components';
+import { RestaurantExperience, SmallTitle, StackedButton, Title } from '../components';
 import { 
   RiCodeSSlashFill,
   RiRestaurantLine,
@@ -20,7 +20,9 @@ const ResumePage = () => {
           </div>
           <div className="resume-download">
             <a href={resume} target="_blank" rel="noopender noreferrer" download>
-              <BoxShadowButton text={"download"} />
+              <div className="button">
+                <StackedButton text={"Download"} />
+              </div>
             </a>
           </div>
         </div>
@@ -114,6 +116,11 @@ const ResumePageStyled = styled.div`
       flex: 1;
       align-self: center;
       text-align: center;
+      & a {
+        & .button {
+          width: 50%;
+        }
+      }
     }
   }
 `;

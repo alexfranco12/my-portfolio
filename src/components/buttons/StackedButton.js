@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const StackedButton = ({ text }) => {
   return ( 
     <StackedButtonStyled>
-      {text}
+      <p>{text}</p> 
     </StackedButtonStyled>
    );
 }

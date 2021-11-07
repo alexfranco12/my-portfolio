@@ -5,7 +5,6 @@ import { Link } from "gatsby";
 export const NavItems = () => {
   return (
     <NavItemsStyled>
-      <Link to="/about">about.</Link>
       <Link to="/#projects">projects.</Link>
       <Link to="/resume">resume.</Link>
       <Link to="/contact">contact.</Link>

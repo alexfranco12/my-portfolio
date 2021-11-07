@@ -12,8 +12,7 @@ module.exports = {
       options: {
         fonts: [
           `roboto mono`,
-          `odor mean chey`,
-          `work sans\:400,400i,700,700i`
+          `work sans\:400,400i,700,700i`,
         ],
         display: 'swap'
       }
