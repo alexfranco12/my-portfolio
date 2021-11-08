@@ -28,6 +28,9 @@ import { Link } from "gatsby";
 export const About = () => {
   return ( 
     <AboutStyled>
+
+      
+
       <div className="s-1">
         <div className="s-1-header">
           <h1>hello! my name is <span>alex</span>,</h1>
@@ -71,11 +74,11 @@ export const About = () => {
 const AboutStyled = styled.div`
   background-color: ${props => props.theme.colors.accent1};
   color: ${props => props.theme.colors.light3};
+  position: relative;
   width: 100%;
   display: flex;
   flex-direction: column;
   padding: 5rem 2rem;
-  margin-bottom: 3rem;
   & .s-1 {
     margin-bottom: 3rem;
     & .s-1-header {
@@ -108,6 +111,8 @@ const AboutStyled = styled.div`
       }
     }
   }
+
+  
 
   @media ${props => props.theme.breakpoints.tablet} {
     padding: 3rem 1rem;
