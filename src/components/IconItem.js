@@ -1,18 +1,18 @@
 import React from "react";
 import styled from "styled-components";
 
-export const SkillItem = ({ icon, text }) => {
+export const IconItem = ({ icon, text }) => {
   const Icon = icon;
 
   return ( 
-    <SkillItemStyled>
+    <IconItemStyled>
       <Icon />
       <p>{text}</p>
-    </SkillItemStyled>
+    </IconItemStyled>
    );
 }
 
-const SkillItemStyled = styled.div`
+const IconItemStyled = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;

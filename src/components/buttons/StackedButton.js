@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const StackedButton = ({ text }) => {
   return ( 
     <StackedButtonStyled>
-      <p>{text}</p> 
+      {text}
     </StackedButtonStyled>
    );
 }
@@ -16,6 +16,7 @@ const StackedButtonStyled = styled.div`
   border-radius: 30px;
   transition: transform 0.3s ease;
   padding: .5rem 1.5rem;
+  text-align: center;
   cursor: pointer;
   &::before,
   &::after {
