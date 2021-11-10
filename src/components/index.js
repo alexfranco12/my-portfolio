@@ -9,9 +9,10 @@ export * from './FeatureImage'
 export * from './ContactForm'
 
 // Navigation
-export * from './NavBar';
-export * from './NavItems';
-export * from './Footer'
+export * from './navigation/NavBar';
+export * from './navigation/HamburgerMenu'
+export * from './navigation/NavItems';
+export * from './navigation/Footer'
 
 // typography
 export * from './Title'
@@ -24,10 +25,10 @@ export * from './buttons/NeonButton'
 export * from './buttons/StackedButton'
 
 // resume
-export * from './ResumeItems/EducationItem'
-export * from './ResumeItems/RestaurantItem'
-export * from './ResumeItems/SkillItem'
-export * from './ResumeItems/HackathonItem'
-export * from './ResumeItems/SoftwareItem'
+export * from './resume-items/EducationItem'
+export * from './resume-items/RestaurantItem'
+export * from './resume-items/SkillItem'
+export * from './resume-items/HackathonItem'
+export * from './resume-items/SoftwareItem'
 
 

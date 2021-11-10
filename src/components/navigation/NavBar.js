@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import { NavItems } from "./NavItems";
-import { RiMenu4Fill } from 'react-icons/ri'
+import { HamburgerMenu, NavItems } from "..";
+
 import { Link } from "gatsby";
 
 export const NavBar = () => {
@@ -20,9 +20,15 @@ export const NavBar = () => {
   return ( 
     <NavBarStyled>
       <Link to="/">
-        {width < 770 ? <h1>af</h1> : <h1>alexander franco</h1>}
+        { width > 770 
+          ? <h1>alexander franco</h1>
+          : <h1>af</h1> 
+        }
       </Link>
-      {width < 430 ? <RiMenu4Fill /> : <NavItems />}
+      { width > 600 
+        ? <NavItems />
+        : <HamburgerMenu />
+      }
     </NavBarStyled>
    );
 }
@@ -34,7 +40,6 @@ const NavBarStyled = styled.div`
   align-items: center;
   justify-content: space-between;
   & a {
-    text-decoration: none;
     color: ${props => props.theme.colors.dark1};
     & h1 {
       margin-left: 1rem;
@@ -44,5 +49,6 @@ const NavBarStyled = styled.div`
 
   @media ${props => props.theme.breakpoints.tablet} {
     grid-column: 2 / span 6;
+    padding-right: 1.5rem;
   }
 `;

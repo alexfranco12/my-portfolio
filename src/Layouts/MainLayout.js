@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled, { ThemeProvider } from "styled-components";
 import { InnerLayout } from ".";
 import { Footer, NavBar, Seo } from '../components'
@@ -11,24 +11,25 @@ export const MainLayout = ({ children }) => {
   return ( 
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme} >
       <MainLayoutStyled>
-        <Seo />
-        <NavBar />
-        <div 
-          className="light-dark-mode"
-          role="button"
-          onClick={() => setDarkMode(!darkMode)}
-          onKeyDown={() => setDarkMode(!darkMode)}
-          tabIndex="0"
-        > 
-        <div className="icon"><MdOutlineLightMode /></div> 
-        </div>
-        <InnerLayout>
-          {children}
-        </InnerLayout>
-        <Footer />
-      </MainLayoutStyled> 
+          <Seo />
+          <NavBar />
+          <div 
+            className="light-dark-mode"
+            role="button"
+            onClick={() => setDarkMode(!darkMode)}
+            onKeyDown={() => setDarkMode(!darkMode)}
+            tabIndex="0"
+          > 
+            <div className="icon"><MdOutlineLightMode /></div> 
+          </div>
+          
+          <InnerLayout>
+            {children}
+          </InnerLayout>
+          
+          <Footer />
+        </MainLayoutStyled> 
     </ThemeProvider>
-    
   );
 }
 
@@ -38,7 +39,7 @@ const MainLayoutStyled = styled.div`
   grid-template-columns: 0 repeat(12, minmax(auto, 1fr)) 0;
   grid-template-rows: 4.8rem auto;
   gap: 0 2rem;
-
+  min-width: 320px;
   & .light-dark-mode {
     grid-column: 6 / span 3;
     grid-row: 1 / 1;

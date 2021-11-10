@@ -45,4 +45,17 @@ const TitleStyled = styled.div`
       top: 10%;
     }
   }
+
+  @media ${props => props.theme.breakpoints.tablet} {
+  
+  }
+
+  @media ${props => props.theme.breakpoints.mobile} {
+    h1 {
+      font-size: 2.1rem;
+      span {
+        font-size: 2.8rem;
+      }
+    }
+  }
 `;

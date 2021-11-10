@@ -7,8 +7,8 @@ export const RestaurantItem = ({ title, subTitle, startDate, endDate, listItems 
       <h2>{title}</h2>
       <h4>{subTitle}</h4>
       <div className="list-items">
-        {listItems.map((item, index) => (
-          <p key={index} className="item">
+        {listItems.map((item, i) => (
+          <p key={i} className="item">
             - {item}
           </p>
         ))}

@@ -32,6 +32,7 @@ const ContactPageStyled = styled.div`
     flex: 1;
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
   }
   .right-content {
     flex: 1;

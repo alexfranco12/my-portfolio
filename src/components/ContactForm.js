@@ -8,7 +8,7 @@ import { PandoraButton, SmallTitle } from ".";
 export const ContactForm = () => {
   const formId = '7fB0qqp6';
   const formSparkURL = `https://submit-form.com/${formId}`;
-  const recaptchaKey = '6LcHDhUdAAAAABMW1s8hKL1PAYjloCMpA-t8wKxH';
+  const recaptchaKey = '6LdOgCYdAAAAAEb14B0fxICkl2G0_sW0mdqotMNV';
   const recaptchaRef = useRef();
 
   const initialFormState = {
@@ -38,7 +38,7 @@ export const ContactForm = () => {
     try {
       const result = await axios.post(formSparkURL, payload);
       console.log(result);
-      setMessage("Thanks you! I will be in touch.")
+      setMessage("Thank you! I will be in touch as soon as i can.")
       setFormState(initialFormState)
       recaptchaRef.current.reset();
     } catch(error) {
@@ -61,13 +61,13 @@ export const ContactForm = () => {
 
   return ( 
     <ContactFormStyled>
-      <div className="title">
-        <SmallTitle title={"Contact Me"} icon={IoPaperPlane} />
-      </div>
 
-      {message && 
-        <div className='submit-message'>
-          {message}
+      { !message 
+      ? <div className="title">
+          <SmallTitle title={"Contact Me"} icon={IoPaperPlane} />
+        </div>
+      : <div className='submit-message'>
+          <span>{message}</span>
         </div>
       }
 
@@ -126,12 +126,27 @@ export const ContactForm = () => {
 const ContactFormStyled = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
   .title {
-    align-self: center;
+    
+  }
+  .submit-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: ${props => props.theme.colors.main2};
+    color: ${props => props.theme.colors.light1};
+    font-size: 1.125rem;
+    border: 1px solid;
+    border-radius: 10px;
+    width: 100%;
+    height: 10vh;
   }
   .contact-form {
-    width: 100%;
+    width: 90%;
     & .input-field {
       display: flex;
       flex-direction: column;

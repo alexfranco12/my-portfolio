@@ -9,8 +9,8 @@ export const SoftwareItem = ({ title, subTitle, description, projects }) => {
       <p className="description">{description}</p>
       <h4>Developed Projects</h4>
       <div className="project-list">
-        {projects.map(project => (
-          <p className="project">- {project}</p>
+        {projects.map((project, i) => (
+          <p className="project" key={i}>- {project}</p>
         ))}
       </div>
       

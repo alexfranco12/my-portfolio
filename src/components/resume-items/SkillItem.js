@@ -6,8 +6,8 @@ export const SkillItem = ({ title, skills }) => {
     <SkillItemStyled>
       <h4>{title}</h4>
       <div className="skill-list">
-        {skills.map(item => (
-          <p className="skill">{item}.</p>
+        {skills.map((item, i) => (
+          <p className="skill" key={i}>{item}.</p>
         ))}
       </div>
     </SkillItemStyled>
