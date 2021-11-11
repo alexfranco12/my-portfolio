@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { RiMenu4Fill, RiCloseFill } from 'react-icons/ri'
-import { Link } from "gatsby";
 import { NavItem } from "./NavItem";
 
 export const HamburgerMenu = () => {

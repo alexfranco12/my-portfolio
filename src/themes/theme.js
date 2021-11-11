@@ -2,7 +2,6 @@ const Theme = {
   fonts: {
     code: "Roboto Mono, monospace",
     main: "Work Sans, sans-serif",
-    typewriter: "Cutive, serif",
   },
   breakpoints: {
     mobile: "only screen and (max-width:425px)",

@@ -22,27 +22,26 @@ const TitleStyled = styled.div`
     font-weight: 700;
     text-transform: uppercase;
     position: relative;
-    padding-bottom: .5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     z-index: 10;
     &::before {
       content: "";
       position: absolute;
       bottom: 0;
       left: 0;
-      width: 9.4rem;
-      height: .29rem;
-      background-color: white;
+      width: 10rem;
+      height: .4rem;
+      background-color: ${props => props.theme.colors.accent1};
       border-radius: 15px;
     }
     span {
-      font-size: 4rem;
-      font-weight: 400;
+      font-size: 1em;
+      font-weight: 700;
       color: ${props => props.theme.colors.dark2};
-      opacity: .16;
+      opacity: .1;
       position: absolute;
       left: 1%;
-      top: 10%;
+      top: 8%;
     }
   }
 

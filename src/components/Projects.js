@@ -63,6 +63,9 @@ export const Projects = () => {
 const ProjectsStyled = styled.div`
   position: relative;
   padding: 3rem 2rem;
+  & h1 {
+    font-family: ${props => props.theme.fonts.title};
+  }
   & .projects {
     display: flex;
     flex-wrap: wrap;
