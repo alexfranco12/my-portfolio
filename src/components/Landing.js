@@ -2,16 +2,14 @@ import React, { useState, useEffect } from 'react'
 import styled from 'styled-components';
 import { RiArrowDownSLine } from 'react-icons/ri'
 
-const words = ['Welcome!', 'portfolio']
+const words = ['portfolio']
 
 export const Landing = () => {
   const [index, setIndex] = useState(0);
   const [subIndex, setSubIndex] = useState(0);
-  const [blink, setBlink] = useState(true);
   const [reverse, setReverse] = useState(false);
-  
 
-  // typeWriter
+  // typewriter
   useEffect(() => {
     if (index === words.length) return;
     if (subIndex === words[index].length + 1 && 
@@ -34,19 +32,11 @@ export const Landing = () => {
     return () => clearTimeout(timeout);
   }, [subIndex, index, reverse]);
 
-  // blinker
-  useEffect(() => {
-    const timeout2 = setTimeout(() => {
-      setBlink((prev) => !prev);
-    }, 500);
-    return () => clearTimeout(timeout2);
-  }, [blink]);
-
   return ( 
     <LandingStyled>
       <div className='title'>
         <h1>{`${words[index].substring(0, subIndex)}`}</h1>
-        <div className="blink" />
+        <span className="blink" />
       </div>
       <div className="scroll-down">
         <p>scroll</p>

@@ -17,42 +17,42 @@ export const Projects = () => {
           title={'Dog Days'}
           date={'September 21, 2021'}
           image={"dog-days.png"}
-          excerpt={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus cupiditate corporis laborum laboriosam deleniti id aliquam velit, esse quod cum."}
+          excerpt={"dog days is an online service to help connect people looking to adopt a dog with available dogs in their area."}
           repo={'https://github.com/alexfranco12/hackathon-group2-sep2021-frontend'}
         />
         <ProjectItem
           title={'Ninja Survival'}
           date={'June 14, 2021'}
           image={'ninja-game.png'}
-          excerpt={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus cupiditate corporis laborum laboriosam deleniti id aliquam velit, esse quod cum."}
+          excerpt={"a lone green ninja tries to survive in a world full of monsters."}
           repo={'https://github.com/alexfranco12/survival-ninja-game'}
         />
         <ProjectItem
           title={'Lettuce Eat'}
           date={'June 14, 2021'}
           image={'lettuce-eat.jpg'}
-          excerpt={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus cupiditate corporis laborum laboriosam deleniti id aliquam velit, esse quod cum."}
+          excerpt={"a platform for the vegan community"}
           repo={'https://github.com/alexfranco12/lettuce_eat_frontend'}
         />
         <ProjectItem
           title={'Purlieu'}
           date={'June 14, 2021'}
           image={'purlieu.png'}
-          excerpt={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus cupiditate corporis laborum laboriosam deleniti id aliquam velit, esse quod cum."}
+          excerpt={"a local search and discovery app that provides recommendations of places to go nearby."}
           repo={'https://github.com/alexfranco12/Project3-Frontend'}
         />
         <ProjectItem
           title={'Mise En Place'}
           date={'June 14, 2021'}
           image={'mise-en-place.png'}
-          excerpt={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus cupiditate corporis laborum laboriosam deleniti id aliquam velit, esse quod cum."}
+          excerpt={"a Recipe App that uses SPOONACULAR's API which allows me to search through a number of recipes using advanced filtering."}
           repo={'https://github.com/alexfranco12/mise-en-place'}
         />
         <ProjectItem
           title={'Towers of Hanoi'}
           date={'June 14, 2021'}
           image={'hanoi.jpg'}
-          excerpt={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus cupiditate corporis laborum laboriosam deleniti id aliquam velit, esse quod cum."}
+          excerpt={"The Tower of Hanoi is a mathematical game or puzzle which consists of three rods and a number of disks of different diameters, which can slide onto any rod."}
           repo={'https://github.com/alexfranco12/towers-of-hanoi'}
         />
       </div>
