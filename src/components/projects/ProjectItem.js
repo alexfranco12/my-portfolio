@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { graphql, useStaticQuery } from "gatsby";
 import { VscGithub, VscLink } from "react-icons/vsc"
-
 import BackgroundImage from 'gatsby-background-image'
 
 export const ProjectItem = ({ title, date, image, excerpt, repo, site}) => {
@@ -41,22 +40,26 @@ export const ProjectItem = ({ title, date, image, excerpt, repo, site}) => {
           </p>
           
           <div className="links">
-            <a
-              href={site} 
-              target="_blank" 
-              rel="noopender noreferrer">
+            
+            {site && 
               <div className="button">
-                <VscLink />
+                <a
+                  href={site} 
+                  target="_blank" 
+                  rel="noopender noreferrer">
+                  <VscLink />
+                </a>
               </div>
-            </a>
-            <a
-              href={repo} 
-              target="_blank" 
-              rel="noopender noreferrer">
-              <div className="button">
+            }
+            <div className="button">
+              <a
+                href={repo} 
+                target="_blank" 
+                rel="noopender noreferrer">
                 <VscGithub />
-              </div>
-            </a>
+              </a>
+            </div>
+            
           </div>
           
           
@@ -106,21 +109,28 @@ const ProjectItemStyled = styled.div`
       }
       & .links {
         display: flex;
-        & a {
-          & .button {
-            cursor: pointer;
-            width: 25%;
-            text-decoration: none;
-            background-color: ${props => props.theme.colors.accent1};
-            padding: 0.25rem 1.25rem;
-            border-radius: 0.25rem;
+        justify-content: flex-end;
+        align-items: center;
+        & .button {
+          cursor: pointer;
+          background-color: ${props => props.theme.colors.accent1};
+          border-radius: 0.25rem;
+          width: 25%;
+          height: 30px;
+          margin: auto 1rem;
+          & a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
             & svg {
               color: ${props => props.theme.colors.light2};
             }
-            &:hover,
-            &:focus {
-              background-color: ${props => props.theme.colors.main3};
-            }
+          }
+          &:hover,
+          &:focus {
+            background-color: ${props => props.theme.colors.main3};
           }
         }
       }

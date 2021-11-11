@@ -3,10 +3,12 @@ export * from './Landing';
 export * from './About';
 export * from './Social';
 export * from './IconItem';
-export * from './Projects';
-export * from './ProjectItem'
 export * from './FeatureImage'
 export * from './ContactForm'
+
+// PROJECTS
+export * from './projects/Projects';
+export * from './projects/ProjectItem'
 
 // Navigation
 export * from './navigation/NavBar';

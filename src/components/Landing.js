@@ -8,6 +8,7 @@ export const Landing = () => {
   const [index, setIndex] = useState(0);
   const [subIndex, setSubIndex] = useState(0);
   const [reverse, setReverse] = useState(false);
+  const [scrollOpacity, setScrollOpacity] = useState(1)
 
   // typewriter
   useEffect(() => {
@@ -32,14 +33,32 @@ export const Landing = () => {
     return () => clearTimeout(timeout);
   }, [subIndex, index, reverse]);
 
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.onscroll = () => {
+        let currentScrollPos = window.pageYOffset;
+        let maxScroll = document.body.scrollHeight - window.innerHeight;
+        console.log(maxScroll)
+        if (currentScrollPos >= 0 && currentScrollPos+200 < maxScroll) {
+          setScrollOpacity(1)
+          console.log(currentScrollPos)
+        } else {
+          setScrollOpacity(0)
+        }
+      }
+    }
+  })
+
   return ( 
     <LandingStyled>
       <div className='title'>
         <h1>{`${words[index].substring(0, subIndex)}`}</h1>
         <span className="blink" />
       </div>
-      <div className="scroll-down">
-        <p>scroll</p>
+      <div 
+        className="scroll-down"
+        style={{ opacity: `${scrollOpacity}` }}
+      > <p>scroll</p>
         <RiArrowDownSLine/>
       </div>
 
