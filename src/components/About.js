@@ -38,7 +38,7 @@ export const About = () => {
             <StackedButton text={"Let's Connect"} />
           </Link>
         </div>
-        <p className="summary">I am a full-stack developer with a broad set of technical and personal skills applicable across various industries and roles; graduated with a BA in Mathematics Education and General Assembly’s SEI Immersive. Reliable, results-driven, user-focused philosophy, proactive problem solver, and cooperative team player.</p>
+        <p className="summary">I am a full-stack developer, and thus far, I have defined my career by connecting with people to solve complex problems through new ideas and experimentation. I possess a broad set of technical and personal skills applicable across various industries and roles; graduated with a BA in Mathematics Education and a certificate in General Assembly’s SEI Immersive. I believe its my initiative, willingness to learn, strong communication skills, and user-focused philosophy that make me a great developer.</p>
       </div>
       <div className="s-2">
         <div className="row-1">
@@ -73,7 +73,7 @@ export const About = () => {
 
 const AboutStyled = styled.div`
   background-color: ${props => props.theme.colors.accent1};
-  color: ${props => props.theme.colors.light3};
+  color: ${props => props.theme.colors.light2};
   position: relative;
   width: 100%;
   display: flex;
@@ -90,13 +90,17 @@ const AboutStyled = styled.div`
       & h1 {
         font-size: 2rem;
         & span {
-          color: ${props => props.theme.colors.light2};
+          color: ${props => props.theme.colors.light1};
+          position: relative;
+          border-bottom: 2px solid ${props => props.theme.colors.main2};
         }
       }
     }
     & .summary {
       font-size: 1.1rem;
       line-height: 1.5rem;
+      text-align: justify;
+      padding: 0 2rem;
     }
   }
   & .s-2 {

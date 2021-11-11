@@ -19,6 +19,7 @@ export const Projects = () => {
           image={"dog-days.png"}
           excerpt={"dog days is an online service to help connect people looking to adopt a dog with available dogs in their area."}
           repo={'https://github.com/alexfranco12/hackathon-group2-sep2021-frontend'}
+          site={'#'}
         />
         <ProjectItem
           title={'Ninja Survival'}
@@ -26,6 +27,7 @@ export const Projects = () => {
           image={'ninja-game.png'}
           excerpt={"a lone green ninja tries to survive in a world full of monsters."}
           repo={'https://github.com/alexfranco12/survival-ninja-game'}
+          site={'#'}
         />
         <ProjectItem
           title={'Lettuce Eat'}
@@ -33,6 +35,7 @@ export const Projects = () => {
           image={'lettuce-eat.jpg'}
           excerpt={"a platform for the vegan community"}
           repo={'https://github.com/alexfranco12/lettuce_eat_frontend'}
+          site={'#'}
         />
         <ProjectItem
           title={'Purlieu'}
@@ -40,6 +43,7 @@ export const Projects = () => {
           image={'purlieu.png'}
           excerpt={"a local search and discovery app that provides recommendations of places to go nearby."}
           repo={'https://github.com/alexfranco12/Project3-Frontend'}
+          site={'#'}
         />
         <ProjectItem
           title={'Mise En Place'}
@@ -47,6 +51,7 @@ export const Projects = () => {
           image={'mise-en-place.png'}
           excerpt={"a Recipe App that uses SPOONACULAR's API which allows me to search through a number of recipes using advanced filtering."}
           repo={'https://github.com/alexfranco12/mise-en-place'}
+          site={'#'}
         />
         <ProjectItem
           title={'Towers of Hanoi'}
@@ -54,6 +59,7 @@ export const Projects = () => {
           image={'hanoi.jpg'}
           excerpt={"The Tower of Hanoi is a mathematical game or puzzle which consists of three rods and a number of disks of different diameters, which can slide onto any rod."}
           repo={'https://github.com/alexfranco12/towers-of-hanoi'}
+          site={'#'}
         />
       </div>
     </ProjectsStyled>

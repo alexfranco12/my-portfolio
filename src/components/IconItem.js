@@ -22,7 +22,7 @@ const IconItemStyled = styled.div`
     text-transform: lowercase;
   }
   & svg {
-    font-size: 2.25rem;
+    font-size: 2rem;
     margin-bottom: .615rem;
   }
 

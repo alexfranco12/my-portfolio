@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import { graphql, useStaticQuery } from "gatsby";
-import { VscGithub } from "react-icons/vsc"
+import { VscGithub, VscLink } from "react-icons/vsc"
 
 import BackgroundImage from 'gatsby-background-image'
 
-export const ProjectItem = ({ title, date, image, excerpt, repo}) => {
+export const ProjectItem = ({ title, date, image, excerpt, repo, site}) => {
   const data = useStaticQuery(graphql`
     query getAllImages {
       allImageSharp {
@@ -39,14 +39,27 @@ export const ProjectItem = ({ title, date, image, excerpt, repo}) => {
           <p className="card-body">
             {excerpt}
           </p>
-          <a
-            href={repo} 
-            target="_blank" 
-            rel="noopender noreferrer">
-            <div className="button">
-              <span className="link" > <VscGithub /> </span>
-            </div>
-          </a>
+          
+          <div className="links">
+            <a
+              href={site} 
+              target="_blank" 
+              rel="noopender noreferrer">
+              <div className="button">
+                <VscLink />
+              </div>
+            </a>
+            <a
+              href={repo} 
+              target="_blank" 
+              rel="noopender noreferrer">
+              <div className="button">
+                <VscGithub />
+              </div>
+            </a>
+          </div>
+          
+          
         </div>
       </BackgroundImage>
     </ProjectItemStyled>
@@ -63,11 +76,13 @@ const ProjectItemStyled = styled.div`
     background-color: ${props => props.theme.colors.dark2};
     padding: 4rem 0 0;
     width: 42ch;
+    height: 280px;
     overflow: hidden;
     border-radius: 0.5rem;
     & .card-content {
       --padding: 1.5rem;
       padding: var(--padding);
+      height: 100%;
       background: linear-gradient( 
         hsl(0 0% 0% / 0),
         hsl(0 0% 0% / .6) 20%,
@@ -89,28 +104,27 @@ const ProjectItemStyled = styled.div`
       & .card-body {
         margin: 1rem auto;
       }
-      & .button {
-        cursor: pointer;
-        width: 25%;
-        text-decoration: none;
-        background-color: ${props => props.theme.colors.accent1};
-        padding: 0.25rem 1.25rem;
-        border-radius: 0.25rem;
-        & .link {
-          display: flex;
-          justify-content: center;
-          justify-items: center;
-          & svg {
-            color: ${props => props.theme.colors.light2};
+      & .links {
+        display: flex;
+        & a {
+          & .button {
+            cursor: pointer;
+            width: 25%;
+            text-decoration: none;
+            background-color: ${props => props.theme.colors.accent1};
+            padding: 0.25rem 1.25rem;
+            border-radius: 0.25rem;
+            & svg {
+              color: ${props => props.theme.colors.light2};
+            }
+            &:hover,
+            &:focus {
+              background-color: ${props => props.theme.colors.main3};
+            }
           }
-        }
-        &:hover,
-        &:focus {
-          background-color: ${props => props.theme.colors.main3};
         }
       }
     }
-
   }
 
   @media (hover) {
