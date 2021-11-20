@@ -13,8 +13,16 @@ export const NavItems = () => {
 }
  
 const NavItemsStyled = styled.div`
+  grid-column: 8 / span 4;
+  grid-row: 1;
   display: flex;
+  justify-content: end;
+  align-items: center;
   & :not(:last-child) {
     margin-right: 2rem;
+  }
+
+  @media ${props => props.theme.breakpoints.tablet} {
+    grid-column: 5 / span 1;
   }
 `;
