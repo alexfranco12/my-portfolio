@@ -14,10 +14,18 @@ export const Projects = () => {
       <Title title={"projects"} />
       <div className="projects">
         <ProjectItem
+          title={'Paint'}
+          date={'November 23, 2021'}
+          image={"paint.png"}
+          excerpt={"An app that lets users express their creativity in a visual format."}
+          repo={'https://github.com/alexfranco12/mintbean-hackathon-november-2021'}
+          site={'https://hungry-lalande-f9b7b7.netlify.app/'}
+        />
+        <ProjectItem
           title={'Dog Days'}
           date={'September 21, 2021'}
           image={"dog-days.png"}
-          excerpt={"dog days is an online service to help connect people looking to adopt a dog with available dogs in their area."}
+          excerpt={"an online service to help connect people looking to adopt a dog with available dogs in their area."}
           repo={'https://github.com/alexfranco12/hackathon-group2-sep2021-frontend'}
           site={null}
         />
