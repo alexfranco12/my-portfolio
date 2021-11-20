@@ -14,4 +14,6 @@ export const NavItem = ({ href, text }) => {
    );
 };
 
-const NavItemStyled = styled.div``;
+const NavItemStyled = styled.div`
+  
+`;

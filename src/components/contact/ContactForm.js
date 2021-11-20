@@ -3,7 +3,7 @@ import styled from "styled-components";
 import axios from 'axios'
 import { IoPaperPlane } from 'react-icons/io5'
 import ReCAPTCHA from "react-google-recaptcha";
-import { PandoraButton, SmallTitle } from ".";
+import { PandoraButton, SmallTitle } from "..";
 
 export const ContactForm = () => {
   const formId = '7fB0qqp6';
@@ -37,6 +37,7 @@ export const ContactForm = () => {
 
     try {
       const result = await axios.post(formSparkURL, payload);
+      console.log(result)
       setMessage("Thank you! I will be in touch as soon as i can.")
       setFormState(initialFormState)
       recaptchaRef.current.reset();

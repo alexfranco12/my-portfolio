@@ -25,8 +25,7 @@ const SoftwareItemStyled = styled.div`
   & .project-list {
     padding: 0 1rem;
     & .project {
-      line-height: 1.25rem;
-      margin-bottom: 1rem;
+      margin: 0.5rem 0;
     }
   }
 `;

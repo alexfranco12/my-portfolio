@@ -18,14 +18,10 @@ export const RestaurantItem = ({ title, subTitle, startDate, endDate, listItems 
 }
  
 const RestaurantItemStyled = styled.div`
-  & h4 {
-    margin: 0.5rem auto;
-  }
   & .list-items {
     padding: 0.5rem;
-    & .item {
-      line-height: 1.2rem;
-      margin-bottom: .435rem;
+    & :not(:first-of-type) {
+      margin: 0.25rem 0;
     }
   }
 `;

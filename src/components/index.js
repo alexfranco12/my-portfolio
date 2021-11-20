@@ -4,7 +4,9 @@ export * from './About';
 export * from './Social';
 export * from './IconItem';
 export * from './FeatureImage'
-export * from './ContactForm'
+
+// CONTACT
+export * from './contact/ContactForm'
 
 // PROJECTS
 export * from './projects/Projects';

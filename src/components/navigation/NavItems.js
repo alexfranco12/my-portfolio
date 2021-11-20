@@ -21,6 +21,9 @@ const NavItemsStyled = styled.div`
   & :not(:last-child) {
     margin-right: 2rem;
   }
+  & a {
+    color: ${props => props.theme.colors.dark1};
+  }
 
   @media ${props => props.theme.breakpoints.tablet} {
     grid-column: 5 / span 1;

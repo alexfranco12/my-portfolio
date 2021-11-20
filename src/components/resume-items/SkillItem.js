@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const SkillItem = ({ title, skills }) => {
   return ( 
     <SkillItemStyled>
-      <h4>{title}</h4>
+      <h4 className="title">{title}:</h4>
       <div className="skill-list">
         {skills.map((item, i) => (
           <p className="skill" key={i}>{item}.</p>
@@ -19,7 +19,7 @@ const SkillItemStyled = styled.div`
   & .skill-list {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 1rem;
+    margin-top: 0.5rem;
     & .skill {
       margin: 0 0.5rem 0.5rem 0.5rem;
     }

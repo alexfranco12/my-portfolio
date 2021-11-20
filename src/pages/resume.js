@@ -70,7 +70,7 @@ const ResumePage = () => {
           <HackathonItem
             title={'Mintbean'}
             date={'November 23, 2021'}
-            description={'TBD'}
+            description={'Build an app that lets your friends and loved ones express their creative side. For example, a blank canvas that you can paint on, a photo-editing app, or a shared white board'}
           />
           <HackathonItem 
             title={'Postman'} 
@@ -179,6 +179,6 @@ const ResumePageStyled = styled.div`
     }
   }
   & .resume-section {
-    margin-bottom: 6rem;
+    margin: 2rem 0;
   }
 `;

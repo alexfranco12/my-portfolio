@@ -24,47 +24,48 @@ export const ProjectItem = ({ title, date, image, excerpt, repo, site}) => {
     return (filtered[0][1].fluid)
   }
   
-
   return ( 
     <ProjectItemStyled>
-      <BackgroundImage
-        Tag="section"
-        className="card"
-        fluid={getImage()}
-        backgroundColor={`#040e18`}
-      >
-        <div className="card-content">
-          <h2 className="card-title">{title}</h2>
-          <p className="card-body">
-            {excerpt}
-          </p>
-          
-          <div className="links">
+      {data && 
+        <BackgroundImage
+          Tag="section"
+          className="card"
+          fluid={getImage()}
+          backgroundColor={`#040e18`}
+        >
+          <div className="card-content">
+            <h2 className="card-title">{title}</h2>
+            <p className="card-body">
+              {excerpt}
+            </p>
             
-            {site && 
+            <div className="links">
+              
+              {site && 
+                <div className="button">
+                  <a
+                    href={site} 
+                    target="_blank" 
+                    rel="noopender noreferrer">
+                    <VscLink />
+                  </a>
+                </div>
+              }
               <div className="button">
                 <a
-                  href={site} 
+                  href={repo} 
                   target="_blank" 
                   rel="noopender noreferrer">
-                  <VscLink />
+                  <VscGithub />
                 </a>
               </div>
-            }
-            <div className="button">
-              <a
-                href={repo} 
-                target="_blank" 
-                rel="noopender noreferrer">
-                <VscGithub />
-              </a>
+              
             </div>
             
+            
           </div>
-          
-          
-        </div>
-      </BackgroundImage>
+        </BackgroundImage>
+      }
     </ProjectItemStyled>
    );
 }
@@ -73,7 +74,7 @@ const ProjectItemStyled = styled.div`
   margin-bottom: 2rem;
   line-height: 1.5;
   & .card {
-    color: ${props => props.theme.colors.light2};
+    color: ${props => props.theme.colors.alwaysWhite};
     background-size: cover;
     background-position: bottom center;
     background-color: ${props => props.theme.colors.dark2};
