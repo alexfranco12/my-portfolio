@@ -1,12 +1,12 @@
 import * as React from 'react'
 import styled from 'styled-components';
 import { ContactForm } from '../components';
-import { MainLayout } from '../Layouts';
+import { InnerLayout } from '../Layouts';
 import contactImage from '../images/contact.jpeg'
 
 const ContactPage = () => {
   return ( 
-    <MainLayout>
+    <InnerLayout>
       <ContactPageStyled>
         <div 
           className="left-content"
@@ -19,7 +19,7 @@ const ContactPage = () => {
         </div>
         
       </ContactPageStyled>
-    </MainLayout>
+    </InnerLayout>
     
    );
 }

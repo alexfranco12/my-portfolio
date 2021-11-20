@@ -1,15 +1,15 @@
 import * as React from 'react'
 import styled from 'styled-components';
 import { Title } from '../components';
-import { MainLayout } from '../Layouts';
+import { InnerLayout } from '../Layouts';
 
 const AboutPage = () => {
   return ( 
-    <MainLayout>
+    <InnerLayout>
       <AboutPageStyled>
         <Title title={"about"} />
       </AboutPageStyled>
-    </MainLayout>
+    </InnerLayout>
    );
 }
  

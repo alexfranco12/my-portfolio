@@ -1,6 +1,6 @@
 import * as React from 'react'
 import styled from 'styled-components';
-import { MainLayout } from '../Layouts';
+import { InnerLayout } from '../Layouts';
 import { 
   EducationItem,
   HackathonItem,
@@ -21,7 +21,7 @@ import resume from '../files/resume.pdf'
 
 const ResumePage = () => {
   return ( 
-    <MainLayout>
+    <InnerLayout>
       <ResumePageStyled>
         <div className="resume-header">
           <div className="resume-title">
@@ -155,7 +155,7 @@ const ResumePage = () => {
           />
         </div>
       </ResumePageStyled>
-    </MainLayout>
+    </InnerLayout>
    );
 }
  
