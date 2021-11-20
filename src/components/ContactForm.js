@@ -37,7 +37,6 @@ export const ContactForm = () => {
 
     try {
       const result = await axios.post(formSparkURL, payload);
-      console.log(result);
       setMessage("Thank you! I will be in touch as soon as i can.")
       setFormState(initialFormState)
       recaptchaRef.current.reset();

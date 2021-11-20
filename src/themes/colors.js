@@ -1,4 +1,4 @@
-export const lightTheme = {
+export const Light = {
   colors: {
     main1: "#5D04D9",
     main2: "#5204BF",
@@ -14,7 +14,7 @@ export const lightTheme = {
   },
 }
 
-export const darkTheme = {
+export const Dark = {
   colors: {
     main1: "#5D04D9",
     main2: "#5204BF",

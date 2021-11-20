@@ -38,10 +38,8 @@ export const Landing = () => {
       window.onscroll = () => {
         let currentScrollPos = window.pageYOffset;
         let maxScroll = document.body.scrollHeight - window.innerHeight;
-        console.log(maxScroll)
         if (currentScrollPos >= 0 && currentScrollPos+200 < maxScroll) {
           setScrollOpacity(1)
-          console.log(currentScrollPos)
         } else {
           setScrollOpacity(0)
         }

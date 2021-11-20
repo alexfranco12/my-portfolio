@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import styled, { ThemeProvider } from "styled-components";
 import { InnerLayout } from ".";
 import { Footer, NavBar, Seo } from '../components'
-import { lightTheme, darkTheme } from '../themes/colors'
+import { Light, Dark } from '../themes/colors'
 import { MdOutlineLightMode } from 'react-icons/md'
 
 export const MainLayout = ({ children }) => {
   const [ darkMode, setDarkMode ] = useState(false)
 
   return ( 
-    <ThemeProvider theme={darkMode ? darkTheme : lightTheme} >
+    <ThemeProvider theme={darkMode ? Dark : Light} >
       <MainLayoutStyled>
           <Seo />
           <NavBar />
