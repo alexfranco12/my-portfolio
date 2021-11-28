@@ -1,9 +1,8 @@
 import React, { useRef, useState } from "react";
 import styled from "styled-components";
 import axios from 'axios'
-import { IoPaperPlane } from 'react-icons/io5'
 import ReCAPTCHA from "react-google-recaptcha";
-import { PandoraButton, SmallTitle } from "..";
+import { PandoraButton, Title } from "..";
 
 export const ContactForm = () => {
   const formId = '7fB0qqp6';
@@ -64,7 +63,7 @@ export const ContactForm = () => {
 
       { !message 
       ? <div className="title">
-          <SmallTitle title={"Contact Me"} icon={IoPaperPlane} />
+          <Title title={"Contact"} />
         </div>
       : <div className='submit-message'>
           <span>{message}</span>
