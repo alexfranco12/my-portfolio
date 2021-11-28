@@ -81,6 +81,8 @@ const ProjectItemStyled = styled.div`
     height: 280px;
     overflow: hidden;
     border-radius: 0.5rem;
+    border: 1px solid ${props => props.theme.colors.light3};
+    box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.4);
     & .card-content {
       position: relative;
       --padding: 1.5rem;
