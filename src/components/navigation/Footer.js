@@ -57,9 +57,11 @@ const FooterStyled = styled.div`
       & svg {
         font-size: 2rem;
         color: ${props => props.theme.colors.dark1};
+        &:hover {
+          color: ${props => props.theme.colors.main2};
+        }
       }
     }
-
   }
   & .copyright {
     grid-column: 2;
@@ -72,5 +74,24 @@ const FooterStyled = styled.div`
 
   @media ${props => props.theme.breakpoints.tablet} {
     grid-column: 2 / span 6;
+  }
+
+  @media ${props => props.theme.breakpoints.mobile} {
+    & .social {
+      & h3 {
+        margin-bottom: .5rem;
+        font-size: smaller;
+      }
+      & a {
+        margin: auto .25rem;
+        & svg {
+          font-size: 1.5rem;
+          color: ${props => props.theme.colors.dark1};
+        }
+      }
+    }
+    & .copyright {
+      font-size: smaller;
+    }
   }
 `;
