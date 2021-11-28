@@ -11,6 +11,7 @@ export const Light = {
     light1: "hsl(0, 0%, 99%)",
     light2: "hsl(0, 0%, 97%)",
     light3: "hsl(0, 0%, 83%)",
+    alwaysWhite: "hsl(0, 0%, 97%)",
   },
 }
 
