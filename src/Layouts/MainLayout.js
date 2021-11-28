@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styled, { ThemeProvider } from "styled-components";
 import { InnerLayout } from ".";
 import { Footer, NavBar, Seo } from '../components'
@@ -6,10 +6,16 @@ import { Light, Dark } from '../themes/colors'
 
 export const MainLayout = ({ children }) => {
   const [ darkMode, setDarkMode ] = useState(false)
+  const [ isLoading, setIsLoading ] = useState(true)
+
+  useEffect(() => {
+    setTimeout(setIsLoading(false), 500)
+  }, [])
 
   return ( 
     <ThemeProvider theme={darkMode ? Dark : Light} >
-      <MainLayoutStyled>
+      { !isLoading && 
+        <MainLayoutStyled>
           <Seo />
           <NavBar setDarkMode={setDarkMode} />
           <InnerLayout>
@@ -17,6 +23,7 @@ export const MainLayout = ({ children }) => {
           </InnerLayout>
           <Footer />
         </MainLayoutStyled> 
+      }
     </ThemeProvider>
   );
 }
