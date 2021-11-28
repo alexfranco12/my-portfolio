@@ -5,9 +5,9 @@ export const Title = ({ title }) => {
   return ( 
     <TitleStyled id={title}>
       <h1>
-        {title}
+        {title}.
         <span>
-          {title}
+          {title}.
         </span>
       </h1>
     </TitleStyled>
