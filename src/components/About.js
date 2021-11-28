@@ -33,12 +33,12 @@ export const About = () => {
 
       <div className="s-1">
         <div className="s-1-header">
-          <h1>hello! my name is <span>alex</span>,</h1>
+          <h1>hello.</h1>
           <Link to="/contact">
             <StackedButton text={"Let's Connect"} />
           </Link>
         </div>
-        <p className="summary">I am a full-stack developer, and thus far, I have defined my career by connecting with people to solve complex problems through new ideas and experimentation. I possess a broad set of technical and personal skills applicable across various industries and roles; graduated with a BA in Mathematics Education and a certificate in General Assembly’s SEI Immersive. I believe its my initiative, willingness to learn, strong communication skills, and user-focused philosophy that make me a great developer.</p>
+        <p className="summary">My name is Alex, and I am a full-stack developer. Thus far, I have defined my career by connecting with people to solve complex problems through new ideas and experimentation. I possess a broad set of technical and personal skills applicable across various industries and roles; graduated with a BA in Mathematics Education and a obtained a certification in General Assembly’s Software Engineer Remote Bootcamp. I believe its my initiative, willingness to learn, strong communication skills, and user-focused philosophy that make me a great developer.</p>
       </div>
       <div className="s-2">
         <div className="row-1">
@@ -145,6 +145,7 @@ const AboutStyled = styled.div`
       & .summary {
         font-size: 0.925rem;
         line-height: 1.2rem;
+        text-align: center;
       }
     }
     & .s-2 {
