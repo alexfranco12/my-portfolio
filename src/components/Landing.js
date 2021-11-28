@@ -25,11 +25,11 @@ export const Landing = () => {
       return;
     }
 
+    // timing for each letter.
     const timeout = setTimeout(() => {
       setSubIndex((prev) => prev + (reverse ? -1 : 1));
     }, Math.max(reverse ? 75 : subIndex === words[index].length ? 1000 :
-                150, parseInt(Math.random() * 350)));
-
+                150, (parseInt(Math.random() * 350) + 100)));
     return () => clearTimeout(timeout);
   }, [subIndex, index, reverse]);
 

@@ -1,13 +1,24 @@
 Desktop:
-  ☐ slow down PORTFOLIO on landing page
+  ✔ slow down PORTFOLIO on landing page @done(21-11-28 10:28)
   ☐ take a look at capatilization
     - particularly "hello" "my" and "alex"
   ☐ list my skills in a more deliberate fashion
 
-   
+  Navigation Bar:
+    ☐ move links to right side of page
+    ☐ change color of links to black
+    ☐ when hovering over a link, display bar underneath
+    ☐ center the dark mode toggle
+    ☐ change the way the application handles page resizing for navbar
+
+  
+  Dark Mode:
+    ☐ switch dark mode toggle from sun to an acutal toggle
+
 
 Mobile:
   ☐ gradient on projects listing is harsh
 
+  
 BUGS:
   ☐ [gatsby-transformer-sharp] The "fixed" and "fluid" resolvers are now deprecated. Switch to "gatsby-plugin-image" for better performance and a simpler API. See https://gatsby.dev/migrate-images to learn how.

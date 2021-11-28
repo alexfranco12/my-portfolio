@@ -15,5 +15,5 @@ export const NavItem = ({ href, text }) => {
 };
 
 const NavItemStyled = styled.div`
-  
+  margin: auto 1rem;
 `;

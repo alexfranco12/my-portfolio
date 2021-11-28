@@ -32,8 +32,6 @@ export const HamburgerMenu = () => {
 };
 
 const HamburgerMenuStyled = styled.div`
-  grid-column: 5 / span 2;
-  grid-row: 1;
   display: flex;
   justify-content: center;
   align-items: center;
