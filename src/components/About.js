@@ -91,8 +91,6 @@ const AboutStyled = styled.div`
         font-size: 2rem;
         & span {
           color: ${props => props.theme.colors.light1};
-          position: relative;
-          border-bottom: 2px solid ${props => props.theme.colors.main2};
         }
       }
     }
