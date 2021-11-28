@@ -1,4 +1,4 @@
-Desktop:
+TODO:
   ✔ slow down PORTFOLIO on landing page @done(21-11-28 10:28)
   ☐ take a look at capatilization
     - particularly "hello" "my" and "alex"
@@ -11,14 +11,21 @@ Desktop:
     ☐ center the dark mode toggle
     ☐ change the way the application handles page resizing for navbar
 
-  
+  Projects:
+    ☐ add markdown files to each project
+    ☐ add border and shadow to each card
+    ✔ fix the color of the font to white @done(21-11-28 11:56)
+    ✔ fix the position of the button so that they are uniform among all project card @done(21-11-28 12:24)
+
   Dark Mode:
     ☐ switch dark mode toggle from sun to an acutal toggle
 
 
-Mobile:
-  ☐ gradient on projects listing is harsh
+  Mobile:
+    ☐ gradient on projects listing is harsh?
+    ☐ fix footer so its responsive
 
-  
+
+
 BUGS:
   ☐ [gatsby-transformer-sharp] The "fixed" and "fluid" resolvers are now deprecated. Switch to "gatsby-plugin-image" for better performance and a simpler API. See https://gatsby.dev/migrate-images to learn how.
