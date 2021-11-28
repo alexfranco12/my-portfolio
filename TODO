@@ -1,0 +1,13 @@
+Desktop:
+  ☐ slow down PORTFOLIO on landing page
+  ☐ take a look at capatilization
+    - particularly "hello" "my" and "alex"
+  ☐ list my skills in a more deliberate fashion
+
+   
+
+Mobile:
+  ☐ gradient on projects listing is harsh
+
+BUGS:
+  ☐ [gatsby-transformer-sharp] The "fixed" and "fluid" resolvers are now deprecated. Switch to "gatsby-plugin-image" for better performance and a simpler API. See https://gatsby.dev/migrate-images to learn how.
