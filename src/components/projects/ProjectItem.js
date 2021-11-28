@@ -40,7 +40,6 @@ export const ProjectItem = ({ title, date, image, excerpt, repo, site}) => {
             </p>
             
             <div className="links">
-              
               {site && 
                 <div className="button">
                   <a
@@ -59,7 +58,6 @@ export const ProjectItem = ({ title, date, image, excerpt, repo, site}) => {
                   <VscGithub />
                 </a>
               </div>
-              
             </div>
             
             
@@ -84,12 +82,13 @@ const ProjectItemStyled = styled.div`
     overflow: hidden;
     border-radius: 0.5rem;
     & .card-content {
+      position: relative;
       --padding: 1.5rem;
       padding: var(--padding);
       height: 100%;
       background: linear-gradient( 
         hsl(0 0% 0% / 0),
-        hsl(0 0% 0% / .6) 20%,
+        hsl(0 0% 0% / .6) 19%,
         hsl(0 0% 0% / 1)
       );
       & .card-title {
@@ -111,7 +110,9 @@ const ProjectItemStyled = styled.div`
       & .links {
         display: flex;
         justify-content: flex-end;
-        align-items: center;
+        position: absolute;
+        width: calc(100% - var(--padding));
+        bottom: 10px;
         & .button {
           cursor: pointer;
           background-color: ${props => props.theme.colors.accent1};
@@ -182,9 +183,9 @@ const ProjectItemStyled = styled.div`
   @media ${props => props.theme.breakpoints.tablet} {
     line-height: 1.2rem;
     & .card {
-      padding: 6rem 0 0;
-      max-width: 28ch;
+      max-width: 32ch;
       & .card-content {
+        padding-top: 2.5rem;
         & .card-title::after {
           bottom: -10px;
         }
