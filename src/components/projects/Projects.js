@@ -14,14 +14,6 @@ export const Projects = () => {
       <Title title={"projects"} />
       <div className="projects">
         <ProjectItem
-          title={'Paint'}
-          date={'November 23, 2021'}
-          image={"paint.png"}
-          excerpt={"An app that lets users express their creativity in a visual format."}
-          repo={'https://github.com/alexfranco12/mintbean-hackathon-november-2021'}
-          site={'https://hungry-lalande-f9b7b7.netlify.app/'}
-        />
-        <ProjectItem
           title={'Dog Days'}
           date={'September 21, 2021'}
           image={"dog-days.png"}
@@ -46,20 +38,28 @@ export const Projects = () => {
           site={null}
         />
         <ProjectItem
+          title={'Mise En Place'}
+          date={'June 14, 2021'}
+          image={'mise-en-place.png'}
+          excerpt={"a recipe App that uses spoonacular's api which allows me to search through a number of recipes using advanced filtering."}
+          repo={'https://github.com/alexfranco12/mise-en-place'}
+          site={'https://compassionate-shirley-0ece4e.netlify.app/'}
+        />
+        <ProjectItem
+          title={'Paint'}
+          date={'November 23, 2021'}
+          image={"paint.png"}
+          excerpt={"an app that lets users express their creativity in a visual format."}
+          repo={'https://github.com/alexfranco12/mintbean-hackathon-november-2021'}
+          site={'https://hungry-lalande-f9b7b7.netlify.app/'}
+        />
+        <ProjectItem
           title={'Purlieu'}
           date={'June 14, 2021'}
           image={'purlieu.png'}
           excerpt={"a local search and discovery app that provides recommendations of places to go nearby."}
           repo={'https://github.com/alexfranco12/Project3-Frontend'}
           site={null}
-        />
-        <ProjectItem
-          title={'Mise En Place'}
-          date={'June 14, 2021'}
-          image={'mise-en-place.png'}
-          excerpt={"a Recipe App that uses SPOONACULAR's API which allows me to search through a number of recipes using advanced filtering."}
-          repo={'https://github.com/alexfranco12/mise-en-place'}
-          site={'https://compassionate-shirley-0ece4e.netlify.app/'}
         />
         <ProjectItem
           title={'Towers of Hanoi'}

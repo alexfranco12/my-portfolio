@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { graphql, useStaticQuery } from "gatsby";
 import { VscGithub, VscLink } from "react-icons/vsc"
 import BackgroundImage from 'gatsby-background-image'
+import { PopUpButton } from "..";
 
 export const ProjectItem = ({ title, date, image, excerpt, repo, site}) => {
   const data = useStaticQuery(graphql`
@@ -40,8 +41,12 @@ export const ProjectItem = ({ title, date, image, excerpt, repo, site}) => {
             </p>
             
             <div className="links">
-              {site && 
-                <div className="button">
+              {site === null 
+              ? <PopUpButton 
+                  icon={<VscLink />}
+                  popup={"Under Construction"}
+                />
+              : <div className="button" >
                   <a
                     href={site} 
                     target="_blank" 
@@ -50,6 +55,7 @@ export const ProjectItem = ({ title, date, image, excerpt, repo, site}) => {
                   </a>
                 </div>
               }
+
               <div className="button">
                 <a
                   href={repo} 
@@ -119,9 +125,9 @@ const ProjectItemStyled = styled.div`
           cursor: pointer;
           background-color: ${props => props.theme.colors.accent1};
           border-radius: 0.25rem;
-          width: 25%;
+          width: 20%;
           height: 30px;
-          margin: auto 1rem;
+          margin-right: 1rem;
           & a {
             display: flex;
             justify-content: center;

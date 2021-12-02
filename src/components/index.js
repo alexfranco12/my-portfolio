@@ -27,6 +27,7 @@ export * from './buttons/BoxShadowButton'
 export * from './buttons/PandoraButton'
 export * from './buttons/NeonButton'
 export * from './buttons/StackedButton'
+export * from './buttons/PopUpButton'
 
 // resume
 export * from './resume-items/EducationItem'
