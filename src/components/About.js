@@ -38,7 +38,7 @@ export const About = () => {
             <StackedButton text={"Let's Connect"} />
           </Link>
         </div>
-        <p className="summary">My name is Alex, and I am a full-stack developer. Thus far, I have defined my career by connecting with people to solve complex problems through new ideas and experimentation. I possess a broad set of technical and personal skills applicable across various industries and roles; graduated with a BA in Mathematics Education and a obtained a certification in General Assembly’s Software Engineer Remote Bootcamp. I believe its my initiative, willingness to learn, strong communication skills, and user-focused philosophy that make me a great developer.</p>
+        <p className="summary">My name is Alex, and I am a full-stack developer. I graduated with a BA in Mathematics and Education, and I recently obtained a certification in General Assembly’s Software Engineer Bootcamp. My career has been defined by my passion for connecting with people to solve complex problems through new ideas, collaboration, and experimentation. I possess a broad set of technical skills and believe its my initiative, willingness to learn, strong communication skills, and user-focused philosophy that makes me a great developer. </p>
       </div>
       <div className="s-2">
         <div className="row-1">
