@@ -1,24 +1,31 @@
 TODO:
   ✔ slow down PORTFOLIO on landing page @done(21-11-28 10:28)
-  ☐ take a look at capatilization
-    - particularly "hello" "my" and "alex"
+  ✔ take a look at capatilization in About section @done(21-11-29 10:06)
   ☐ list my skills in a more deliberate fashion
+  ☐ change all buttons to be uniform
 
   Navigation Bar:
-    ☐ move links to right side of page
-    ☐ change color of links to black
-    ☐ when hovering over a link, display bar underneath
-    ☐ center the dark mode toggle
-    ☐ change the way the application handles page resizing for navbar
+    ✔ move links to right side of page @done(21-11-29 10:06)
+    ✔ change color of links to black @done(21-11-29 10:06)
+    ✔ when hovering over a link, display bar underneath @done(21-11-29 10:06)
+    ✔ center the dark mode toggle @done(21-11-29 10:06)
+    ✔ change the way the application handles page resizing for navbar @done(21-11-29 10:06)
 
   Projects:
+    ☐ "F" format: best projects in top left, then the top right, then bottom left. 
+    ☐ “Deployed Site Coming Soon” button or something like that.
+    ☐ finish readme files
     ☐ add markdown files to each project
+    ☐ ensure summary is all lowercase and ends in periods
     ☐ add border and shadow to each card
     ✔ fix the color of the font to white @done(21-11-28 11:56)
     ✔ fix the position of the button so that they are uniform among all project card @done(21-11-28 12:24)
 
   Resume:
-    
+    ☐ Experiences: include the dates you started and ended 
+    ☐ Hackathons: list the tech stacks you used and any other relevant details.
+    ☐ GA projects: instead of saying “Project #“, include the actual name of your project.
+    ☐ Education: Include your graduation dates from GA and ISU
 
   Contact Form:
     ☐ create more stylish text boxes
@@ -28,8 +35,8 @@ TODO:
 
 
   Mobile:
-    ☐ gradient on projects listing is harsh?
-    ☐ fix footer so its responsive
+    ✘ gradient on projects listing is harsh? @cancelled(21-11-29 10:06)
+    ✔ fix footer so its responsive @done(21-11-29 10:06)
 
 
 
