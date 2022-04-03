@@ -13,7 +13,7 @@ export const Projects = () => {
           image={"dog-days.png"}
           excerpt={"an online service to help connect people looking to adopt a dog with available dogs in their area."}
           repo={'https://github.com/alexfranco12/hackathon-group2-sep2021-frontend'}
-          site={null}
+          site={'https://nimble-gecko-f04fe0.netlify.app/'}
         />
         <ProjectItem
           title={'Ninja Survival'}
