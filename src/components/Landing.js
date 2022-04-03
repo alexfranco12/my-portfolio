@@ -25,15 +25,6 @@ export const Landing = () => {
       return;
     }
 
-    // timing for each letter.
-    const timeout = setTimeout(() => {
-      setSubIndex((prev) => prev + (reverse ? -1 : 1));
-    }, Math.max(reverse ? 75 : subIndex === words[index].length ? 1000 :
-                150, (parseInt(Math.random() * 350) + 100)));
-    return () => clearTimeout(timeout);
-  }, [subIndex, index, reverse]);
-
-  useEffect(() => {
     if (typeof window !== "undefined") {
       window.onscroll = () => {
         let currentScrollPos = window.pageYOffset;
@@ -45,7 +36,14 @@ export const Landing = () => {
         }
       }
     }
-  })
+
+    // timing for each letter.
+    const timeout = setTimeout(() => {
+      setSubIndex((prev) => prev + (reverse ? -1 : 1));
+    }, Math.max(reverse ? 75 : subIndex === words[index].length ? 1000 :
+                150, (parseInt(Math.random() * 350) + 100)));
+    return () => clearTimeout(timeout);
+  }, [subIndex, index, reverse]);
 
   return ( 
     <LandingStyled>
@@ -58,12 +56,6 @@ export const Landing = () => {
         style={{ opacity: `${scrollOpacity}` }}
       > <p>scroll</p>
         <RiArrowDownSLine/>
-      </div>
-
-      <div className="curve">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className="shape-fill"></path>
-        </svg>
       </div>
 
     </LandingStyled>
@@ -104,25 +96,6 @@ const LandingStyled = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-
-  & .curve {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-    & svg {
-      position: relative;
-      display: block;
-      width: calc(130% + 1.3px);
-      height: 59px;
-    }
-    & .shape-fill {
-      fill: ${props => props.theme.colors.accent1};
-    }
   }
 
   @media ${props => props.theme.breakpoints.tablet} {

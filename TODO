@@ -11,13 +11,19 @@ TODO:
     ✔ center the dark mode toggle @done(21-11-29 10:06)
     ✔ change the way the application handles page resizing for navbar @done(21-11-29 10:06)
 
+  About Me:
+    ☐ Add ruby
+    ☐ Add Ruby on Rails
+    ☐ Remove typescript
+    ☐ Fix bottom line
+
   Projects:
     ☐ "F" format: best projects in top left, then the top right, then bottom left. 
-    ☐ “Deployed Site Coming Soon” button or something like that.
+    ✔ “Deployed Site Coming Soon” button or something like that. @done(21-12-02 13:14)
     ☐ finish readme files
     ☐ add markdown files to each project
-    ☐ ensure summary is all lowercase and ends in periods
-    ☐ add border and shadow to each card
+    ✔ ensure summary is all lowercase and ends in periods @done(21-12-02 13:14)
+    ✔ add border and shadow to each card @done(21-12-02 13:14)
     ✔ fix the color of the font to white @done(21-11-28 11:56)
     ✔ fix the position of the button so that they are uniform among all project card @done(21-11-28 12:24)
 
@@ -42,3 +48,5 @@ TODO:
 
 BUGS:
   ☐ [gatsby-transformer-sharp] The "fixed" and "fluid" resolvers are now deprecated. Switch to "gatsby-plugin-image" for better performance and a simpler API. See https://gatsby.dev/migrate-images to learn how.
+  ☐ GET http://localhost:8000/static/89031fcd6d664e25838b7de6532f943a/ee604/paint.png 404 (Not Found)
+  ☐ Warning: Can't perform a React state update on an unmounted component. This is a no-op, but it indicates a memory leak in your application. To fix, cancel all subscriptions and asynchronous tasks in a useEffect cleanup function.

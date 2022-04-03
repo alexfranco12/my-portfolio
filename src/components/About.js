@@ -21,15 +21,16 @@ import {
   SiGithubactions,
   SiHeroku,
   SiFigma,
-  SiTypescript
+  SiRuby,
+  SiRubyonrails,
+  SiMysql,
+  SiTailwindcss
 } from 'react-icons/si'
 import { Link } from "gatsby";
 
 export const About = () => {
   return ( 
     <AboutStyled>
-
-      
 
       <div className="s-1">
         <div className="s-1-header">
@@ -45,7 +46,8 @@ export const About = () => {
           <IconItem icon={FaHtml5} text={"HTML5"} />
           <IconItem icon={FaCss3} text={"CSS3"} />
           <IconItem icon={SiJavascript} text={"JAVASCRIPT"} />
-          <IconItem icon={SiTypescript} text={"TYPESCRIPT"} />
+          <IconItem icon={SiRuby} text={"RUBY"} />
+          <IconItem icon={SiRubyonrails} text={"RUBY ON RAILS"} />
           <IconItem icon={FaPython} text={"PYTHON"} />
           <IconItem icon={FaNodeJs} text={"NODE"} />
 
@@ -56,12 +58,14 @@ export const About = () => {
           <IconItem icon={SiGatsby} text={"GATSBY"} />
           <IconItem icon={SiDjango} text={"DJANGO"} />
           <IconItem icon={SiMongodb} text={"MONGODB"} />
+          <IconItem icon={SiMysql} text={"MYSQL"} />
           <IconItem icon={SiPostgresql} text={"POSTGRESQL"} />
         </div>
         <div className="row-3">
           <IconItem icon={SiFigma} text={"FIGMA"} />
           <IconItem icon={SiMaterialui} text={"MATERIALUI"} />
           <IconItem icon={SiBootstrap} text={"BOOTSTRAP"} />
+          <IconItem icon={SiTailwindcss} text={"TAILWIND"} />
           <IconItem icon={SiGithubactions} text={"GITHUB"} />
           <IconItem icon={SiHeroku} text={"HEROKU"} />
           <IconItem icon={SiPostman} text={"POSTMAN"} />
@@ -75,7 +79,6 @@ const AboutStyled = styled.div`
   background-color: ${props => props.theme.colors.accent1};
   color: ${props => props.theme.colors.light2};
   position: relative;
-  width: 100%;
   display: flex;
   flex-direction: column;
   padding: 5rem 2rem;
